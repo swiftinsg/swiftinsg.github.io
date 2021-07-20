@@ -1,0 +1,121 @@
+.main {
+    background-image: url("../../images/homeShapes-2.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.swiftIcon {
+    background-image: url("../../images/logo.png");
+    background-color: var(--primary);
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.landingHeader {
+    display: flex;
+    flex-direction: column;
+    &>a {
+        text-decoration: none;
+        color: black;
+        margin: 10px 5px;
+        font-size: 2.5vh;
+        width: 15vw;
+        &:hover {
+            color: grey
+        }
+    }
+}
+
+.jumboText {
+    margin-top: 4vh;
+    &>h3 {
+        font-size: 5vh;
+        margin: 0;
+        color: var(--highlight);
+    }
+    &>h1 {
+        font-size: 8vh;
+        margin: 0;
+        font-weight: 500;
+    }
+}
+
+.section {
+    margin: 0 max(50px, 8vw);
+    width: calc(100vw - max(50px, 8vw)*2);
+}
+
+.sectionOne {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    padding: 25vh 0 0 0;
+
+    &>.text {
+        font-size: 3vh;
+        margin: 30px 0;
+        letter-spacing: 2px;
+        color: grey;
+        &>p {
+            margin: 5vh 0;
+        }
+    }
+}
+
+.sectionThree {
+
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0;
+
+    &>.photoGallery {
+        background-image: url("../../images/banners/banner1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60vw;
+        height: calc(60vw/16*8);
+    }
+
+    &::before, &::after {
+        width: 40vh;
+        height: 40vh;
+        content: "";
+        position: absolute;
+        background-image: url("../../images/diamond.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &::before {
+        left: 0;
+        margin-left: calc(0px - max(50px, 8vw) - 20vh);
+    }
+
+    &::after {
+        right: 0;
+        margin-right: calc(0px - max(50px, 8vw) - 20vh);
+    }
+}
+
+.sectionFour {
+    padding: 20vh 0;
+}
