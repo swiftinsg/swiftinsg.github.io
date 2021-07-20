@@ -1,54 +1,76 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://swiftinsg.org">
+    <img alt="Swift" src="./src/images/logo.png" width="100" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  SIS Website
 </h1>
 
-## 🚀 Quick start
+## Getting Started
 
-1.  **Create a Gatsby site.**
+This website was created using [Gatsby](https://www.gatsbyjs.com/) which is built on top of React. If you are not familiar with React, I have left a few links at the bottom under `Learning` that you can use to get started.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+This website also uses SCSS and Typescript instead of CSS and Javascript. Resources to learn those are at the bottom of this README too.
+
+If you feel confident enough in React, Typescript and SCSS, feel free to follow the instructions below.
+
+1. **Developing**
+
+    Please create and push your changes to a new branch with the name of what you plan to add/change. For example, if you are adding a new page for reviews, create a branch called `new-reviews-page` and work off that. Once you are done with all the changes you plan to make, create a pull request to merge with the **`dev`** branch.
+
+    Do **NOT** push directly to **`main`** or **`dev`**.
+
+    ## Install NodeJS and NPM
+    
+    Download for your platform here: https://nodejs.org/en/download/
+
+    ## Setup and Running
+
+    Run these commands to get started working on this repo:
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    $ npm i
+    $ npm run develop
     ```
 
-2.  **Start developing.**
+    The website should then be running at http://localhost:8000
 
-    Navigate into your new site’s directory and start it up.
+2. **Deploying**
+
+    **Only** the Webmaster should deploy any new changes. To anyone else, this section is irrelevant to you.
+
+    To deploy your changes to https://swiftinsg.github.io/, just do this:
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    $ npm run deploy
     ```
 
-3.  **Open the code and start customizing!**
+    Please also remember to commit and push your changes to `main` so the rest of us can see your changes.
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Learning
 
-4.  **Learn more**
+HTML, CSS and Javascript:
+- [W3 Schools](https://w3schools.com)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+React:
+- [Tutorial](https://reactjs.org/tutorial/tutorial.html)
+- [Documentation](https://reactjs.org/docs/getting-started.html)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Gatsby:
+- [Tutorial](https://www.gatsbyjs.com/docs/tutorial/)
+- [Documentation](https://www.gatsbyjs.com/docs/)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Typescript:
+- [Tutorial (For those new to coding)](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [Tutorial (For those that understand JS)](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [React Typescript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example)
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+SCSS:
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+If you understand CSS well, you can probably skip this. SCSS is very similar to CSS. We do not use SASS in this website.
+- [Sass Basics](https://sass-lang.com/guide)
+- [Documentation](https://sass-lang.com/documentation)
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Remember, when in doubt, consult Google and Stack Overflow first.
