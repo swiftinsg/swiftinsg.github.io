@@ -1,0 +1,25 @@
+{
+  "name": "swiftinsg.org",
+  "version": "1.0.0",
+  "private": true,
+  "description": "swiftinsg.org",
+  "author": "Portatolova",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.9.1",
+    "gatsby-plugin-sass": "^4.9.0",
+    "gatsby-plugin-sitemap": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.35.2"
+  }
+}
