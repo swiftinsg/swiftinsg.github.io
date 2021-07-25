@@ -1,0 +1,46 @@
+
+.landingHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px max(30px, 10vw);
+    width: calc(100% - 2*max(30px, 10vw));
+    position: absolute;
+    background-color: #FFFFFF00;
+    transition: .2s background-color;
+    z-index: 100;
+}
+
+.beyondScroll {
+    background-color: var(--primary);
+    position: fixed;
+    padding: 10px max(30px, 10vw);
+    filter: drop-shadow(0 0px 1px grey)
+}
+
+.headerLinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &>a {
+        text-decoration: none;
+        color: black;
+        margin: 10px 18px;
+        font-size: 2vh;
+        letter-spacing: 1px;
+        &:hover {
+            color: grey
+        }
+    }
+}
+
+.swiftIcon {
+    background-image: url("../../images/logo.png");
+    background-color: var(--primary);
+    min-width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

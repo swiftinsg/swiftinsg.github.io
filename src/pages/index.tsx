@@ -2,6 +2,7 @@ import * as React from "react"
 import { PageProps, Link } from "gatsby";
 
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import * as styles from "./styles/index.module.scss";
 
@@ -15,18 +16,22 @@ const IndexPage = (props: PageProps) => {
         <header className={styles.landingHeader}>
           <div className={styles.swiftIcon} />
           <Link to="/">Home</Link>
-          <Link to="/">Swift Innovator Summit</Link>
+          <Link to="/sis">Swift Innovators' Summit</Link>
           <Link to="/">Students</Link>
           <Link to="/">Apps</Link>
           <Link to="/">News</Link>
           <Link to="/">Join Us</Link>
         </header>
         <div className={styles.jumboText}>
-          <h3>Coming Soon!</h3>
-          <h1>Swift Innovator's<br />Summit 2022</h1>
+          <h1>Swift Accelerator<br />Programme</h1>
+          <div>
+            <a target="_blank" href="https://www.instagram.com/swiftinsg/"><FontAwesomeIcon icon={["fab", "instagram"]} /></a>
+            <a target="_blank" href="https://twitter.com/swiftinsg"><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
+            <a target="_blank" href="mailto:hello@swiftinsg.org"><FontAwesomeIcon icon={["far", "envelope"]} /></a>
+          </div>
         </div>
       </section>
-      <section className={[styles.section, styles.sectionTwo].join(' ')}>
+      {/*<section className={[styles.section, styles.sectionTwo].join(' ')}>
         <SectionTitle title="About" />
         <div className={styles.text}>
           <p>The Swift Accelerator Programme is an intensive talent development programme for secondary school students with an interest and aptitude for app development and computational thinking. Over 8 months, participants learn to code in Swift, and apply story-telling and design thinking principles to design, build, and release an iOS app of their own.</p>
@@ -39,7 +44,7 @@ const IndexPage = (props: PageProps) => {
       </section>
       <section className={[styles.section, styles.sectionFour].join(' ')}>
         <SectionTitle title="What's New" />
-      </section>
+      </section>*/}
     </main>
   )
 }

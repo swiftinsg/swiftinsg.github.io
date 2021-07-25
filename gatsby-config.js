@@ -3,5 +3,11 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "swiftinsg.org",
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-sitemap"],
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp"
+  ],
 };

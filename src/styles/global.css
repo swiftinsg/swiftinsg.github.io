@@ -9,6 +9,7 @@ body {
     --background: white;
     --text: black;
     --primary: #FCF4C4;
+    --primary-light: #FCF4C4;
     --secondary: #F6B800;
     --highlight: #F83C1E;
 }
