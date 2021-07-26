@@ -1,0 +1,29 @@
+.linkText {
+    color: inherit;
+}
+
+.flavorButton {
+    background-color: var(--primary);
+    text-decoration: none;
+    color:black;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 32px;
+}
+
+.flexContainer {
+    display: flex; 
+    flex-direction: row;
+}
+
+#bodyText {
+    color: black;
+}
+
+#altButton {
+    background-color: var(--secondary);
+}
+
+.flavorButton:hover {
+    opacity: 50%;
+}
