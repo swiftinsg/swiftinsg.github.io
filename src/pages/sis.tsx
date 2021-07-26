@@ -12,7 +12,7 @@ function SISPage() {
 
     return (<>
         <Header />
-        <main className={styles.page}>
+        <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
                 <div className={styles.logoBig} />
                 <h1>Swift Innovators'<br />Summit 2022</h1>
@@ -71,7 +71,7 @@ function SISPage() {
                 <h3>Our Speakers</h3>
                 <div className={styles.speakers}>
                     <div className={styles.speaker}>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} />
+                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
                         <div className={styles.description}>
                             <h3>Yuma Soerianto</h3>
                             <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
@@ -82,10 +82,10 @@ function SISPage() {
                             <h3>Yuma Soerianto</h3>
                             <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
                         </div>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} />
+                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
                     </div>
                     <div className={styles.speaker}>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} />
+                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
                         <div className={styles.description}>
                             <h3>Yuma Soerianto</h3>
                             <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>

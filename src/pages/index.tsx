@@ -17,10 +17,10 @@ const IndexPage = (props: PageProps) => {
           <div className={styles.swiftIcon} />
           <Link to="/">Home</Link>
           <Link to="/sis">Swift Innovators' Summit</Link>
-          <Link to="/">Students</Link>
-          <Link to="/">Apps</Link>
-          <Link to="/">News</Link>
-          <Link to="/">Join Us</Link>
+          <Link to="/students">Students</Link>
+          <Link to="/apps">Apps</Link>
+          <Link to="/news">News</Link>
+          <Link to="/joinus">Join Us</Link>
         </header>
         <div className={styles.jumboText}>
           <h1>Swift Accelerator<br />Programme</h1>
