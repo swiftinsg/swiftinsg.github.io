@@ -18,6 +18,8 @@ function StudentsPage() {
         <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
                 <h1>News</h1>
+            </section>
+            <section className={[styles.section, styles.sectionTwo].join(" ")}>
                 <div className={newsStyles.flexContainer}>
                     <div className={newsStyles.articleBlock}>
                             <StaticImage src="../images/banners/appBanner.png" className={newsStyles.articleImgContainer} alt='news article'/>                      
@@ -34,8 +36,6 @@ function StudentsPage() {
                         </div>
                     </div>
                 </div>
-
-                
             </section>
             <Footer />
         </main>
