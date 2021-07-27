@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
 import Header from "../components/Header";
@@ -7,8 +7,21 @@ import ReadMore from "../components/ReadMore";
 import Footer from "../components/Footer";
 
 import * as styles from "./styles/sis.module.scss";
+import SIS2022 from "../components/sis/2022";
+import SIS2021 from "../components/sis/2021";
+import SIS2019 from "../components/sis/2019";
+import SIS2018 from "../components/sis/2018";
 
 function SISPage() {
+
+    const [year, setYear] = useState<"2018" | "2019" | "2021" | "2022">("2022");
+
+    const elemsByYear = {
+        "2018": <SIS2018 />,
+        "2019": <SIS2019 />,
+        "2021": <SIS2021 />,
+        "2022": <SIS2022 />
+    }
 
     return (<>
         <Header />
@@ -27,71 +40,14 @@ function SISPage() {
             </section>
             <section className={[styles.section, styles.sectionThree].join(" ")}>
                 <div className={styles.btnHolder}>
-                    <div className={styles.sisBtn}>SIS 2018</div>
-                    <div className={styles.sisBtn}>SIS 2019</div>
-                    <div className={styles.sisBtn}>SIS 2021</div>
-                    <div className={styles.sisBtn}>SIS 2022</div>
+                    <div className={styles.sisBtn} onClick={() => setYear("2018")} style={{ backgroundColor: year === "2018" ? "var(--secondary)" : "" }}>SIS 2018</div>
+                    <div className={styles.sisBtn} onClick={() => setYear("2019")} style={{ backgroundColor: year === "2019" ? "var(--secondary)" : "" }}>SIS 2019</div>
+                    <div className={styles.sisBtn} onClick={() => setYear("2021")} style={{ backgroundColor: year === "2021" ? "var(--secondary)" : "" }}>SIS 2021</div>
+                    <div className={styles.sisBtn} onClick={() => setYear("2022")} style={{ backgroundColor: year === "2022" ? "var(--secondary)" : "" }}>SIS 2022</div>
                 </div>
                 {/*<SectionTitle title="Swift Innovators’ Summit 2022" />*/}
 
-                <div className={styles.bannerHolder}>
-                    <div className={styles.banner} />
-                    <h1>Swift Innovators’ Summit 2022</h1>
-                </div>
-
-                <h3>Schedule</h3>
-                <div className={styles.schedule}>
-                    <span>Date: 30 January 2021</span>
-                    <span>Time: 9.00 AM - 10:30 AM</span>
-                    <span>Format: Virtual Conference</span>
-                    <table>
-                        <tr>
-                            <td>9.00 AM - 9.15 AM</td>
-                            <td>Welcome</td>
-                        </tr>
-                        <tr>
-                            <td>9.15 AM - 9.45 AM</td>
-                            <td>Fireside Chat with Yuma Soerianto, Projai Rangsri and Yee Jia Chen</td>
-                        </tr>
-                        <tr>
-                            <td>9.45 AM - 10.05 AM</td>
-                            <td>Keynote Presentation</td>
-                        </tr>
-                        <tr>
-                            <td>10.05 AM - 10.20 AM</td>
-                            <td>Graduation Ceremony of SAP</td>
-                        </tr>
-                        <tr>
-                            <td>10.20 AM - 10.30 AM</td>
-                            <td>Closing Address</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <h3>Our Speakers</h3>
-                <div className={styles.speakers}>
-                    <div className={styles.speaker}>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
-                        <div className={styles.description}>
-                            <h3>Yuma Soerianto</h3>
-                            <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
-                        </div>
-                    </div>
-                    <div className={styles.speaker}>
-                        <div className={styles.description} style={{ textAlign: 'right' }}>
-                            <h3>Yuma Soerianto</h3>
-                            <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
-                        </div>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
-                    </div>
-                    <div className={styles.speaker}>
-                        <StaticImage src="../images/speakers/yuma.png" alt="yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
-                        <div className={styles.description}>
-                            <h3>Yuma Soerianto</h3>
-                            <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
-                        </div>
-                    </div>
-                </div>
+                {elemsByYear[year]}
 
                 <div className={styles.appBanner}>
                     <h1>Changing the world. One app at a time.</h1>
