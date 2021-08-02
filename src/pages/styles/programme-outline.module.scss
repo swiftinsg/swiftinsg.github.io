@@ -1,0 +1,103 @@
+.page {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.section {
+    margin: 0 max(40px, calc(10vw + 10px));
+    width: calc(100% - 2*max(40px, calc(10vw + 10px)));
+}
+
+.sectionOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    &>.bg {
+        background-image: url("../../images/banners/programme-outline.jpg");
+        filter: brightness(0.55);
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
+    &>h1 {
+        font-size: 8vh;
+        letter-spacing: 3px;
+        font-weight: 700;
+        margin: 0 0;
+        z-index: 10;
+    }
+    &>h3 {
+        font-size: 2vh;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: var(--highlight);
+        margin: 20px 0;
+        max-width: 50vw;
+        z-index: 10;
+    }
+    &>.stats {
+        display: flex;
+        margin-top: 40px;
+        z-index: 10;
+        &>div {
+            margin: 40px;
+            padding: 40px;
+            width: 20vh;
+            border-radius: 30px;
+            filter: drop-shadow(0 0 1px grey);
+            &:nth-child(1) { background-color: var(--primary); }
+            &:nth-child(2) { background-color: var(--secondary); }
+            &>h1 {
+                font-size: 5vh;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin: 0;
+            }
+            &>h3 {
+                margin: 0;
+                font-size: 3vh;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+.linkText {
+    color: inherit;
+}
+
+.sectionTwo {
+    padding: 10vh 0;
+    &> div {
+        border-left: 5px dashed var(--secondary);
+        width: 100%
+    }
+}
+
+.outlineDiv {
+    padding: 0 50px 50px;
+    display: flex;
+    align-items: center;
+    &>div:nth-child(1) {
+        &>h1 {
+            font-size: 4vh;
+        }
+        &>p {
+            font-size: 2.5vh;
+        }
+    }
+    &>img {
+        width: 15vw;
+        height: 15vw;
+    }
+}
