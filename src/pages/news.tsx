@@ -8,31 +8,32 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import * as styles from "./styles/apps.module.scss";
-import * as newsStyles from "./styles/news.module.scss";
+import * as styles from "./styles/news.module.scss";
 
 function StudentsPage() {
 
     return (<>
-        <Header />
-        <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
+        <Header startWhite={true} />
+        <main className={styles.page}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
+                <div className={styles.bg} />
                 <h1>News</h1>
+                <ReadMore />
             </section>
             <section className={[styles.section, styles.sectionTwo].join(" ")}>
-                <div className={newsStyles.flexContainer}>
-                    <div className={newsStyles.articleBlock}>
-                            <StaticImage src="../images/banners/appBanner.png" className={newsStyles.articleImgContainer} alt='news article'/>                      
-                        <div className={newsStyles.articleText}>
-                            <h2 className={newsStyles.articleTitle}>Apple CEO Tim Cook visited us in 2019, and encouraged students to code</h2>
-                            <a href="#" className={newsStyles.seeMoreButton}>SEE MORE</a>
+                <div className={styles.flexContainer}>
+                    <div className={styles.articleBlock}>
+                            <StaticImage src="../images/banners/appBanner.png" className={styles.articleImgContainer} alt='news article'/>                      
+                        <div className={styles.articleText}>
+                            <h2 className={styles.articleTitle}>Apple CEO Tim Cook visited us in 2019, and encouraged students to code</h2>
+                            <a href="#" className={styles.seeMoreButton}>SEE MORE</a>
                         </div>
                     </div>
-                    <div className={newsStyles.articleBlock}>
-                            <StaticImage src="../images/speakers/yuma.png" className={newsStyles.articleImgContainer} alt='news article'/>                      
-                        <div className={newsStyles.articleText}>
-                            <h2 className={newsStyles.articleTitle}>Test Headline 2</h2>
-                            <a href="#" className={newsStyles.seeMoreButton}>SEE MORE</a>
+                    <div className={styles.articleBlock}>
+                            <StaticImage src="../images/speakers/yuma.png" className={styles.articleImgContainer} alt='news article'/>                      
+                        <div className={styles.articleText}>
+                            <h2 className={styles.articleTitle}>Test Headline 2</h2>
+                            <a href="#" className={styles.seeMoreButton}>SEE MORE</a>
                         </div>
                     </div>
                 </div>

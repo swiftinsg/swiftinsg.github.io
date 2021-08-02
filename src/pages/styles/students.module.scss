@@ -1,13 +1,21 @@
 .page {
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 100vw;
     width: 100vw;
     overflow-x: hidden;
 }
 
+.overlay {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 50;
+    display: none;
+}
+
 .section {
-    margin: 0 max(40px, calc(10vw + 10px));
+    padding: 0 max(40px, calc(10vw + 10px));
     width: calc(100% - 2*max(40px, calc(10vw + 10px)));
 }
 
@@ -18,6 +26,15 @@
     flex-direction: column;
     height: 100vh;
     text-align: center;
+    color: white;
+    &>.bg {
+        background-image: url("../../images/banners/students.jpeg");
+        filter: brightness(0.55);
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-position: center -10vh;
+    }
     &>.logoBig {
         background-image: url("../../images/logo_big.png");
         background-position: center;
@@ -27,10 +44,11 @@
         height: 40vh;
     }
     &>h1 {
-        font-size: 6vh;
+        font-size: 12vh;
         letter-spacing: 3px;
         font-weight: 500;
         margin: 0 0;
+        z-index: 10;
     }
     &>h3 {
         font-size: 4.5vh;
@@ -39,30 +57,34 @@
         color: var(--highlight);
         margin: 20px 0;
     }
-    &>.stats {
-        display: flex;
-        margin-top: 40px;
-        &>div {
-            margin: 40px;
-            padding: 40px;
-            width: 20vh;
-            border-radius: 30px;
-            filter: drop-shadow(0 0 1px grey);
-            &:nth-child(1) { background-color: var(--primary); }
-            &:nth-child(2) { background-color: var(--secondary); }
-            &>h1 {
-                font-size: 5vh;
-                font-weight: 500;
-                letter-spacing: 2px;
-                margin: 0;
-            }
-            &>h3 {
-                margin: 0;
-                font-size: 3vh;
-                font-weight: 300;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+    &>div {
+        margin: 40px;
+        padding: 40px;
+        width: 25vh;
+        border-radius: 30px;
+        filter: drop-shadow(0 0 1px grey);
+        color: black;
+        &:nth-child(1) { background-color: var(--primary); }
+        &:nth-child(2) { background-color: var(--secondary); }
+        &>h1 {
+            font-size: 5vh;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        &>h3 {
+            margin: 0;
+            font-size: 3vh;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
     }
 }
@@ -70,7 +92,8 @@
 .sectionTwo {
     display: flex;
     flex-direction: column;
-    padding: 5vh 0;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
 
     &>.testimonials {
         width: 100%;
@@ -79,7 +102,7 @@
 
 .sectionThree {
     background-color: var(--primary);
-    padding: 0 50px;
+    margin: 0 50px;
     width: calc(100% - 2*max(40px, calc(10vw + 10px)) - 100px);
     margin-bottom: 50px;
     border-radius: 30px;

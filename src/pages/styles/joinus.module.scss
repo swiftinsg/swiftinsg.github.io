@@ -18,6 +18,15 @@
     flex-direction: column;
     height: 100vh;
     text-align: center;
+    color: white;
+    &>.bg {
+        background-image: url("../../images/banners/joinus.jpeg");
+        filter: brightness(0.55);
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
     &>.logoBig {
         background-image: url("../../images/logo_big.png");
         background-position: center;
@@ -25,12 +34,14 @@
         background-repeat: no-repeat;
         width: 40vh;
         height: 40vh;
+        z-index: 10;
     }
     &>h1 {
         font-size: 6vh;
         letter-spacing: 3px;
         font-weight: 500;
         margin: 0 0;
+        z-index: 10;
     }
     &>h3 {
         font-size: 2vh;
@@ -39,10 +50,12 @@
         color: var(--highlight);
         margin: 20px 0;
         max-width: 50vw;
+        z-index: 10;
     }
     &>.stats {
         display: flex;
         margin-top: 40px;
+        z-index: 10;
         &>div {
             margin: 40px;
             padding: 40px;
@@ -80,6 +93,7 @@
     margin: 16px;
     border-radius: 32px;
     font-size: 2vh;
+    z-index: 10;
     &>svg {
         margin-right: 10px;
     }
@@ -91,7 +105,7 @@
 }
 
 #bodyText {
-    color: black;
+    color: white;
 }
 
 #altButton {
@@ -99,5 +113,5 @@
 }
 
 .flavorButton:hover {
-    opacity: 50%;
+    color: grey
 }

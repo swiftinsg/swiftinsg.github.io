@@ -75,8 +75,15 @@
             border-radius: 2px;
             letter-spacing: 1px;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             &:hover {
                 filter: drop-shadow(0 0 1px grey);
+            }
+            &>span {
+                font-size: 1vh;
+                margin-top: -5px;
             }
         }
         &>.selected {

@@ -10,10 +10,6 @@ function sis2021() {
             <div className={[styles.banner, sisStyles.bg].join(" ")} />
             <h1>Swift Innovators’ Summit 2022<br />Coming Soon!</h1>
         </div>
-
-        <div className={styles.watchThisSpace}>
-            <h1>Watch this space!</h1>
-        </div>
     </>)
 }
 

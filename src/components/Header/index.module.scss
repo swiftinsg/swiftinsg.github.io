@@ -11,6 +11,13 @@
     z-index: 100;
 }
 
+.startWhite {
+    color: white;
+    &>.headerLinks>a {
+        color: white !important;
+    }
+}
+
 .beyondScroll {
     background-color: var(--primary);
     position: fixed;

@@ -10,42 +10,47 @@ import "slick-carousel/slick/slick-theme.css";
 
 import * as styles from "./styles/students.module.scss";
 
+const testimonials = {
+    top: [
+        //{ name: "", img: "", year: "2018", desc: "" },
+        { name: "Min Jia", img: "minjia.png", year: "2019", desc: "I love the Swift Accelerator Programme. It made me learn a new programming language. At first, I thought Swift was something very difficult to learn, but after going through many sessions, it was not that hard after all. Through this program, I have not only learnt Swift Coding, but I have also got to know people from different schools and made good friends with them. YJ was very engaging and he was one of the best teachers that I have ever met." },
+        { name: "Neo Hao Jun", img: "haojun.png", year: "2020", desc: "The Swift Accelerator Programme has been an extremely fun and fulfilling experience, as I was given an opportunity to not only publish my app on the global stage but also learn from my peers, spread my passion for coding, and hone my leadership skills by planning for and managing the Swift Innovators’ Summit 2021." }
+    ],
+    carousel: [
+        //{ name: "", img: "", year: "2018", desc: "" },
+        //{ name: "", img: "", year: "2018", desc: "" },
+        { name: "Shayden Wong", img: "", year: "2019", desc: "SAP has definitely improved my skills not only in coding but also in other aspects like marketing, designing and prototyping. It also has various sessions like a storytelling session to get us to collaborate and communicate with others who we are not familiar with. SAP is really engaging, not like any normal ICT lesson which you would sleep in. Over the course of these few months, I have definitely not regretted coming to this course." },
+        { name: "Faith Lim", img: "", year: "2019", desc: "This program was extremely fun and interesting. I learnt new things such as table views, tab bars and collection views. These new skills that I learnt are very helpful to me in developing my own apps. For example, I have created an app based on a CRUD app that I learnt in this program. I have also gotten to know new people and made new friends. This program has benefitted me greatly both in the knowledge and social aspects. I hope to be able to return next year to help out." },
+        { name: "Nicholas Johansa", img: "", year: "2020", desc: "The Swift Accelerator Programme was an amazing opportunity to expand my skillset and knowledge in a fun and engaging way. Taking part was a pleasure, despite the COVID-19 situation, thanks to YJ  and the alumnis who helped us greatly along the way and would engage and connect with us by chatting with us on Discord." },
+        { name: "Kiera Nadine", img: "", year: "2020", desc: "I learnt so much from the Swift Accelerator Programme. Not only was I given a chance to release an app on the App Store, but have also become more technology-ready for the future. Along the way, I made many new friends and developed my love for programming. Overall, it was a fun and enriching experience!" }
+    ]
+}
+
 function StudentsPage() {
 
     return (<>
-        <Header />
-        <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
+        <Header startWhite={true} />
+        <div className={styles.overlay} style={{ backgroundImage: "url(/assets/genericBg.svg)" }} />
+        <main className={styles.page}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
+                <div className={styles.bg} />
                 <h1>Our Students</h1>
-                <div className={styles.stats}>   
-                    <div>
-                        <h1>154</h1>
-                        <h3>Alumni</h3>
-                    </div>
-                    <div>
-                        <h1>31</h1>
-                        <h3>Schools</h3>
-                    </div>
-                </div>
                 <ReadMore />
             </section>
+            <div className={styles.stats}>   
+                <div>
+                    <h1>154</h1>
+                    <h3>Alumni</h3>
+                </div>
+                <div>
+                    <h1>31</h1>
+                    <h3>Schools</h3>
+                </div>
+            </div>
             <section className={[styles.section, styles.sectionTwo].join(" ")}>
                 <SectionTitle title="Testimonials" />
                 <div className={styles.testimonials}>
-                    <div className={styles.testimonial}>
-                        <StaticImage src="../images/testimonials/minjia.png" alt="minjia" className={styles.photo} style={{ borderRadius: '50%' }} />
-                        <div className={styles.description}>
-                            <p>I love the Swift Accelerator Programme. It made me learn a new programming language. At first, I thought Swift was something very difficult to learn, but after going through many sessions, it was not that hard after all. Through this program, I have not only learnt Swift Coding, but I have also got to know people from different schools and made good friends with them. YJ was very engaging and he was one of the best teachers that I have ever met.</p>
-                            <h3><span>Min Jia,</span> Class of 2019</h3>
-                        </div>
-                    </div>
-                    <div className={styles.testimonial}>
-                        <div className={styles.description} style={{ textAlign: 'right' }}>
-                            <p>Through this course, we were able to learn more about the swift language and deepen our understanding of App Development. Other than just learning the skills essential for app development, international speakers were invited to teach us on subjects such as prototyping and brainstorming. This course has also enabled us to meet other avid programmers in the same age group and share the same interest in programming. We were able to make many new friends and embark on app development journey with them. Overall, this journey could not have been more fun without all my friends and I can now embark on my own development journey after learning all the essential skills.</p>
-                            <h3><span>Chaw Liang,</span> Class of 2019</h3>
-                        </div>
-                        <StaticImage src="../images/testimonials/chowliang.png" alt="chowliang" className={styles.photo} style={{ borderRadius: '50%' }} />
-                    </div>
+                    {testimonials.top.map((t, i) => <Testimonial i={i} {...t} />)}
                 </div>
             </section>
             <section className={[styles.section, styles.sectionThree].join(" ")}>
@@ -56,29 +61,27 @@ function StudentsPage() {
                 <Slider dotsClass={["slick-dots", styles.dotsClass].join(" ")}
                     className={styles.slider} autoplay={true} infinite={true}
                     dots={true} arrows={true}>
-                    <div>
-                        <div className={[styles.testimonial, styles.carouselTestimonial].join(" ")}>
-                            <StaticImage src="../images/testimonials/kesler.png" alt="chowliang" className={styles.photo} style={{ borderRadius: '50%' }} />
-                            <div className={styles.description}>
-                                <p>The Swift Accelerator Program was a fruitful experience for me, as I managed to learn a lot of coding with varying levels of difficulty. While some lessons were a little fast and felt like I couldn't catch up, there were instructors around to help me.</p>
-                                <h3><span>Kesler Kok</span></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className={[styles.testimonial, styles.carouselTestimonial].join(" ")}>
-                            <StaticImage src="../images/testimonials/chowliang.png" alt="chowliang" className={styles.photo} style={{ borderRadius: '50%' }} />
-                            <div className={styles.description}>
-                                <p>Through this course, we were able to learn more about the swift language and deepen our understanding of App Development. Other than just learning the skills essential for app development, international speakers were invited to teach us on subjects such as prototyping and brainstorming. This course has also enabled us to meet other avid programmers in the same age group and share the same interest in programming. We were able to make many new friends and embark on app development journey with them. Overall, this journey could not have been more fun without all my friends and I can now embark on my own development journey after learning all the essential skills.</p>
-                                <h3><span>Chaw Liang,</span> Class of 2019</h3>
-                            </div>
-                        </div>
-                    </div>
+                    {testimonials.carousel.map((t) => <div>
+                        <Testimonial {...t} />
+                    </div>)}
                 </Slider>
             </section>
             <Footer />
         </main>
     </>);
+}
+
+function Testimonial({ img, desc, name, year, i }: { img: string; desc: string; name: string; year: string; i?: number }) {
+
+    return (<div
+        className={[styles.testimonial, styles.carouselTestimonial].join(" ")}
+        style={i % 2 == 1 ? { textAlign: 'right', flexDirection: 'row-reverse' } : {}}>
+        <img src={`/assets/testimonials/${img}`} className={styles.photo} />
+        <div className={styles.description}>
+            <p>{desc}</p>
+            <h3><span>{name},</span> Class of {year}</h3>
+        </div>
+    </div>);
 }
 
 export default StudentsPage;

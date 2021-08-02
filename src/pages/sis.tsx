@@ -14,18 +14,17 @@ import SIS2018 from "../components/sis/2018";
 
 function SISPage() {
 
-    const [year, setYear] = useState<"2018" | "2019" | "2021" | "2022">("2022");
+    const [year, setYear] = useState<"2018" | "2019" | "2021" | "2022">("2021");
 
     const elemsByYear = {
         "2018": <SIS2018 />,
         "2019": <SIS2019 />,
-        "2021": <SIS2021 />,
-        "2022": <SIS2022 />
+        "2021": <SIS2021 />
     }
 
     return (<>
         <Header />
-        <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
+        <main className={styles.page} style={{ backgroundImage: "url(/assets/genericBg.svg)" }}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
                 <div className={styles.logoBig} />
                 <h1>Swift Innovators'<br />Summit 2022</h1>
@@ -43,7 +42,7 @@ function SISPage() {
                     <div className={styles.sisBtn} onClick={() => setYear("2018")} style={{ backgroundColor: year === "2018" ? "var(--secondary)" : "" }}>SIS 2018</div>
                     <div className={styles.sisBtn} onClick={() => setYear("2019")} style={{ backgroundColor: year === "2019" ? "var(--secondary)" : "" }}>SIS 2019</div>
                     <div className={styles.sisBtn} onClick={() => setYear("2021")} style={{ backgroundColor: year === "2021" ? "var(--secondary)" : "" }}>SIS 2021</div>
-                    <div className={styles.sisBtn} onClick={() => setYear("2022")} style={{ backgroundColor: year === "2022" ? "var(--secondary)" : "" }}>SIS 2022</div>
+                    <div className={styles.sisBtn} style={{ backgroundColor: year === "2022" ? "var(--secondary)" : "", cursor: 'not-allowed' }}>SIS 2022<span>Coming Soon!</span></div>
                 </div>
                 {/*<SectionTitle title="Swift Innovators’ Summit 2022" />*/}
 
@@ -54,8 +53,8 @@ function SISPage() {
                     <p>From apps for work to apps for play, see how our Swift Accelerator Program 2020<br />students bring their ideas to life.</p>
                     <Link to="/apps">Explore the apps</Link>
                 </div>
-
-                <StaticImage src="../images/icons.png" alt="yuma" className={styles.icons} />
+                <br />
+                <br />
             </section>
             <Footer />
         </main>
