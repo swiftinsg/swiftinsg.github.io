@@ -11,9 +11,10 @@ import * as styles from "./styles/joinus.module.scss";
 function StudentsPage() {
 
     return (<>
-        <Header />
-        <main className={styles.page} style={{ backgroundImage: "url(/static/assets/genericBg.svg)" }}>
+        <Header startWhite={true} />
+        <main className={styles.page}>
             <section className={[styles.section, styles.sectionOne].join(" ")}>
+                <div className={styles.bg} />
                 <h1>Join Us</h1>
                 <h3 id={styles.bodyText}>Applications for the Class of 2021 are closed.</h3>
                 <h3 id={styles.bodyText}>Email <a className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</a> to find out more, or follow us on social media to keep up with the Class of 2021.</h3>

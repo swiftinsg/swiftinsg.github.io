@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1506" viewBox="0 0 1920 1506">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-SIS_Page_1);
+      }
+
+      .cls-2 {
+        fill: #fcf4c4;
+      }
+
+      .cls-3 {
+        fill: #f6b800;
+      }
+
+      .cls-4 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-SIS_Page_1">
+      <rect width="1920" height="1506"/>
+    </clipPath>
+  </defs>
+  <g id="SIS_Page_1" data-name="SIS Page – 1" class="cls-1">
+    <rect class="cls-4" width="1920" height="1506"/>
+    <g id="Group_24" data-name="Group 24">
+      <rect id="Shape" class="cls-2" width="865.123" height="707.022" transform="matrix(-0.731, -0.682, 0.682, -0.731, 2.811, 1312.599)"/>
+      <rect id="Shape-2" data-name="Shape" class="cls-3" width="671.018" height="257.763" transform="matrix(-0.731, -0.682, 0.682, -0.731, 55.705, 625.25)"/>
+      <rect id="Shape-3" data-name="Shape" class="cls-2" width="865.123" height="707.022" transform="matrix(0.731, 0.682, -0.682, 0.731, 1901.189, -41.5)"/>
+      <rect id="Shape-4" data-name="Shape" class="cls-3" width="671.018" height="257.763" transform="matrix(0.731, 0.682, -0.682, 0.731, 1848.295, 645.85)"/>
+    </g>
+  </g>
+</svg>

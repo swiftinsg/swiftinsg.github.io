@@ -3,26 +3,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px max(30px, 10vw);
+    padding: 20px max(30px, 10vw);
     width: calc(100% - 2*max(30px, 10vw));
     position: absolute;
     background-color: #FFFFFF00;
     transition: .2s background-color;
+    height: 95px;
     z-index: 100;
+}
+
+.startWhite {
+    color: white;
+    .headerLinks>a, .headerLinks>div>a {
+        color: white !important;
+    }
 }
 
 .beyondScroll {
     background-color: var(--primary);
     position: fixed;
-    padding: 10px max(30px, 10vw);
-    filter: drop-shadow(0 0px 1px grey)
+    padding: 0 max(30px, 10vw);
+    height: 95px;
+    filter: drop-shadow(0 0px 1px grey);
+    & .dropDownMenu {
+        background-color: var(--primary) !important;
+        top: 95px !important;
+        filter: none !important;
+    }
 }
 
 .headerLinks {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    &>a {
+    align-items: center;
+    & a {
         text-decoration: none;
         color: black;
         margin: 10px 18px;
@@ -43,4 +58,26 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    &:hover {
+        &>.dropDownMenu {
+            display: flex;
+        }
+    }
+    &>.dropDownMenu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        filter: drop-shadow(0 0px 1px grey);
+        top: 110px;
+        position: absolute;
+        &>a {
+            padding: 5px 0;
+        }
+    }
 }

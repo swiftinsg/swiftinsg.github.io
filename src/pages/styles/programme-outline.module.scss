@@ -20,26 +20,17 @@
     text-align: center;
     color: white;
     &>.bg {
-        background-image: url("../../images/banners/joinus.jpeg");
+        background-image: url("../../images/banners/programme-outline.jpg");
         filter: brightness(0.55);
         position: absolute;
         width: 100vw;
         height: 100vh;
         background-position: center;
     }
-    &>.logoBig {
-        background-image: url("../../images/logo_big.png");
-        background-position: center;
-        background-size: 140%;
-        background-repeat: no-repeat;
-        width: 40vh;
-        height: 40vh;
-        z-index: 10;
-    }
     &>h1 {
-        font-size: 6vh;
+        font-size: 8vh;
         letter-spacing: 3px;
-        font-weight: 500;
+        font-weight: 700;
         margin: 0 0;
         z-index: 10;
     }
@@ -85,33 +76,28 @@
     color: inherit;
 }
 
-.flavorButton {
-    background-color: var(--primary);
-    text-decoration: none;
-    color:black;
-    padding: 32px;
-    margin: 16px;
-    border-radius: 32px;
-    font-size: 2vh;
-    z-index: 10;
-    &>svg {
-        margin-right: 10px;
+.sectionTwo {
+    padding: 10vh 0;
+    &> div {
+        border-left: 5px dashed var(--secondary);
+        width: 100%
     }
 }
 
-.flexContainer {
-    display: flex; 
-    flex-direction: row;
-}
-
-#bodyText {
-    color: white;
-}
-
-#altButton {
-    background-color: var(--secondary);
-}
-
-.flavorButton:hover {
-    color: grey
+.outlineDiv {
+    padding: 0 50px 50px;
+    display: flex;
+    align-items: center;
+    &>div:nth-child(1) {
+        &>h1 {
+            font-size: 4vh;
+        }
+        &>p {
+            font-size: 2.5vh;
+        }
+    }
+    &>img {
+        width: 15vw;
+        height: 15vw;
+    }
 }

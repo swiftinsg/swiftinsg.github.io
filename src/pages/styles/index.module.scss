@@ -22,14 +22,36 @@
 .landingHeader {
     display: flex;
     flex-direction: column;
-    &>a {
+    & a {
         text-decoration: none;
         color: black;
         margin: 10px 5px;
         font-size: 2.5vh;
-        width: 20vw;
         &:hover {
             color: grey
+        }
+    }
+}
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:hover {
+        &>.dropDownMenu {
+            display: flex;
+        }
+    }
+    &>.dropDownMenu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        filter: drop-shadow(0 0px 1px grey);
+        top: 0;
+        left: 80px;
+        position: absolute;
+        &>a {
+            padding: 5px 10px;
         }
     }
 }
