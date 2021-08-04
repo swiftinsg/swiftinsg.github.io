@@ -36,6 +36,17 @@ If you feel confident enough in React, Typescript and SCSS, feel free to follow 
 
     The website should then be running at http://localhost:8000
 
+    ## Troubleshooting
+
+    Do note that if, for some reason, assets are not showing, try restarting the node server. Otherwise, run the following command to clear the cache and rebuild everything:
+
+    ```sh
+    $ gastby clean
+    $ npm run develop
+    ```
+
+    Do note that this requires you to have [`gastby-cli` installed globally](https://www.npmjs.com/package/gatsby-cli)
+
 2. **Deploying**
 
     **Only** the Webmaster should deploy any new changes. To anyone else, this section is irrelevant to you.
