@@ -1,0 +1,17 @@
+.page {
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.bg {
+    background-image: url(../../images/genericBg.svg);
+}
+
+@media (max-width: 840px) {
+    .page {
+        background-image: none;
+    }
+}

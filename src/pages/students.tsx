@@ -1,14 +1,17 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import Page from "../components/Page";
+import Section from "../components/Section";
 import Header from "../components/Header";
 import SectionTitle from "../components/SectionTitle";
 import ReadMore from "../components/ReadMore";
 import Footer from "../components/Footer";
+import BannerSection from "../components/BannerSection";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import * as styles from "./styles/students.module.scss";
+import studentsBanner from "../images/banners/students.jpeg"
 
 const testimonials = {
     top: [
@@ -30,13 +33,11 @@ function StudentsPage() {
 
     return (<>
         <Header startWhite={true} />
-        <div className={styles.overlay} style={{ backgroundImage: "url(/assets/genericBg.svg)" }} />
-        <main className={styles.page}>
-            <section className={[styles.section, styles.sectionOne].join(" ")}>
-                <div className={styles.bg} />
+        <Page>
+            <BannerSection bg={studentsBanner}>
                 <h1>Our Students</h1>
                 <ReadMore />
-            </section>
+            </BannerSection>
             <div className={styles.stats}>   
                 <div>
                     <h1>154</h1>
@@ -47,13 +48,13 @@ function StudentsPage() {
                     <h3>Schools</h3>
                 </div>
             </div>
-            <section className={[styles.section, styles.sectionTwo].join(" ")}>
+            <Section className={styles.sectionTwo}>
                 <SectionTitle title="Testimonials" />
                 <div className={styles.testimonials}>
                     {testimonials.top.map((t, i) => <Testimonial i={i} {...t} />)}
                 </div>
-            </section>
-            <section className={[styles.section, styles.sectionThree].join(" ")}>
+            </Section>
+            <Section className={styles.sectionThree}>
                 <style>{`
                     .slick-prev:before, .slick-next:before { color: black }
                     .slick-track { display: flex; align-items: center; }
@@ -65,9 +66,9 @@ function StudentsPage() {
                         <Testimonial {...t} />
                     </div>)}
                 </Slider>
-            </section>
+            </Section>
             <Footer />
-        </main>
+        </Page>
     </>);
 }
 

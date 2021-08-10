@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
+import Page from "../components/Page";
+import Section from "../components/Section";
 import Header from "../components/Header";
 import SectionTitle from "../components/SectionTitle";
 import ReadMore from "../components/ReadMore";
 import Footer from "../components/Footer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import BannerSection from "../components/BannerSection";
 
 import * as styles from "./styles/apps.module.scss";
+import appsBanner from "./../images/appBanner.svg";
 
 const currentApps = [
     { title: "Do It", description: "Stay on top of your tasks.", icon: "2019/Doit.png", link: "https://apps.apple.com/us/app/doit-do-it/id1485829640?ls=1" },
@@ -66,8 +66,8 @@ function StudentsPage() {
 
     return (<>
         <Header />
-        <main className={styles.page}>
-            <section className={[styles.section, styles.sectionOne].join(" ")}>
+        <Page>
+            <BannerSection bg={appsBanner} bgStyle={{ backgroundSize: '150vh', filter: 'none' }} style={{ color: 'black' }}>
                 <h1>Apps</h1>
                 {/*<div className={styles.stats}>   
                     <div>
@@ -76,22 +76,24 @@ function StudentsPage() {
                     </div>
                 </div>*/}
                 <ReadMore />
-            </section>
-            <section className={[styles.section, styles.sectionTwo].join(" ")}>
+            </BannerSection>
+            <Section className={styles.sectionTwo}>
                 <SectionTitle title="Current Class Apps" />
                 <div className={styles.appHolder}>
                     {currentApps.map((app) => <App {...app} />)}
                 </div>
                 <SectionTitle title="Apps by our Alumni" />
-                {Object.keys(appsByCategory).map((cat, key) => <>
-                    <h2>{cat}</h2>
-                    <div className={styles.appHolder}>
-                        {appsByCategory[cat].map((app) => <App {...app} />)}
-                    </div>
-                </>)}
-            </section>
+                <>
+                    {Object.keys(appsByCategory).map((cat, key) => <>
+                        <h2>{cat}</h2>
+                        <div className={styles.appHolder}>
+                            {appsByCategory[cat].map((app) => <App {...app} />)}
+                        </div>
+                    </>)}
+                </>
+            </Section>
             <Footer />
-        </main>
+        </Page>
     </>);
 }
 

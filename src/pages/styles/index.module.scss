@@ -153,3 +153,33 @@
 .sectionFour {
     padding: 20vh 0;
 }
+
+@media (max-height: 650px), (max-width: 520px) {
+    .landingHeader > a {
+        margin: 5px 5px;
+    }
+    .section {
+        margin: 0 max(30px, 4vw);
+        width: calc(100vw - max(50px, 8vw)*2);
+    }
+    .main {
+        background-position: top right;
+    }
+    .jumboText {
+        & > div > a {
+            margin-right: 20px;
+        }
+        & > h1 {
+            line-height: 10vh;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .jumboText {
+        & > h1 {
+            font-size: 6vh;
+            line-height: 8vh;
+        }
+    }
+}

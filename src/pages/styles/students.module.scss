@@ -1,8 +1,4 @@
 @use "sass:math";
-.page {
-    width: 100vw;
-    overflow-x: hidden;
-}
 
 .overlay {
     background-position: top right;
@@ -13,11 +9,6 @@
     position: absolute;
     z-index: 50;
     display: none;
-}
-
-.section {
-    padding: 0 max(40px, calc(10vw + 10px));
-    width: calc(100% - 2*max(40px, calc(10vw + 10px)));
 }
 
 .sectionOne {

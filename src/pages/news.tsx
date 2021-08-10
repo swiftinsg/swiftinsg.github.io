@@ -1,26 +1,25 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"
+import Page from "../components/Page";
+import BannerSection from "../components/BannerSection";
+import Section from "../components/Section";
 import Header from "../components/Header";
 import SectionTitle from "../components/SectionTitle";
 import ReadMore from "../components/ReadMore";
 import Footer from "../components/Footer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import * as styles from "./styles/news.module.scss";
+import newsBanner from "../images/banners/news.jpeg";
 
 function StudentsPage() {
 
     return (<>
         <Header startWhite={true} />
-        <main className={styles.page}>
-            <section className={[styles.section, styles.sectionOne].join(" ")}>
-                <div className={styles.bg} />
-                <h1>News and Achievements</h1>
+        <Page>
+            <BannerSection bg={newsBanner}>
+                <h1>News and<br />Achievements</h1>
                 <ReadMore />
-            </section>
-            <section className={[styles.section, styles.sectionTwo].join(" ")}>
+            </BannerSection>
+            <Section className={styles.sectionTwo}>
                 <SectionTitle title="News" />
                 <div className={styles.flexContainer}>
                     <div className={styles.articleBlock}>
@@ -45,8 +44,8 @@ function StudentsPage() {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className={[styles.section, styles.sectionThree].join(" ")}>
+            </Section>
+            <Section className={styles.sectionThree}>
                 <SectionTitle title="Achievements" />
                 <div className={styles.flexContainer}>
                     <div className={styles.articleBlock}>
@@ -71,9 +70,9 @@ function StudentsPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </Section>
             <Footer />
-        </main>
+        </Page>
     </>);
 }
 
