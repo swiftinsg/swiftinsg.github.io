@@ -31,7 +31,7 @@ function sis2021() {
                 </tr>
                 <tr>
                     <td>10.05 AM - 10.20 AM</td>
-                    <td>Graduation Ceremony of SAP</td>
+                    <td>Graduation Ceremony of the <i>Swift Accelerator Class of 2020</i></td>
                 </tr>
                 <tr>
                     <td>10.20 AM - 10.30 AM</td>

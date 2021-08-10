@@ -1,3 +1,4 @@
+@use "sass:math";
 .page {
     width: 100vw;
     overflow-x: hidden;
@@ -128,6 +129,7 @@
         border-radius: 50%;
         background-size: contain;
         min-width: 150px;
+        max-width: 150px;
         margin: 0 15px;
     }
 
@@ -158,6 +160,7 @@
         background-size: contain;
         min-width: max(200px, 10vw);
         min-height: max(200px, 10vw);
+        flex-basis: math.div(100,4)*1%;
         margin: 0 15px;
     }
     &>.description {
