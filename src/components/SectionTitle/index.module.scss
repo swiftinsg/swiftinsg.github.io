@@ -11,3 +11,15 @@
         border-color: var(--highlight)
     }
 }
+
+@media (max-width: 840px) {
+    .title {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .titleHolder {
+        align-items: center;
+        width: 100%;
+    }
+}

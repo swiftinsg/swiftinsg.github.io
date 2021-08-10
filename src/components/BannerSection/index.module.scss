@@ -1,17 +1,4 @@
-.page {
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-.section {
-    margin: 0 max(40px, calc(10vw + 10px));
-    width: calc(100% - 2*max(40px, calc(10vw + 10px)));
-}
-
-.sectionOne {
+.bannerSection {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,15 +7,26 @@
     text-align: center;
     color: white;
     &>.bg {
-        background-image: url("../../images/banners/programme-outline.jpg");
+        background-image: url("../../images/banners/joinus.jpeg");
         filter: brightness(0.55);
         position: absolute;
         width: 100vw;
         height: 100vh;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &>figure {
+        background-image: url("../../images/logo_big.png");
+        background-position: center;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        width: 40vh;
+        height: 40vh;
+        z-index: 10;
     }
     &>h1 {
-        font-size: 8vh;
+        font-size: 10vh;
         letter-spacing: 3px;
         font-weight: 700;
         margin: 0 0;
@@ -72,32 +70,57 @@
     }
 }
 
-.linkText {
-    color: inherit;
-}
-
-.sectionTwo {
-    padding: 10vh 0;
-    &> div {
-        border-left: 5px dashed var(--secondary);
-        width: 100%
-    }
-}
-
-.outlineDiv {
-    padding: 0 50px 50px;
+.bannerNoBg {
     display: flex;
     align-items: center;
-    &>div:nth-child(1) {
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    &>figure {
+        background-image: url("../../images/logo_big.png");
+        background-position: center;
+        background-size: 140%;
+        background-repeat: no-repeat;
+        width: 40vh;
+        height: 40vh;
+    }
+    &>h1 {
+        font-size: 6vh;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin: 0 0;
+    }
+    &>h3 {
+        font-size: 4.5vh;
+        letter-spacing: 3px;
+        font-weight: 600;
+        color: var(--highlight);
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 710px) {
+    .bannerSection {
         &>h1 {
-            font-size: 4vh;
-        }
-        &>p {
-            font-size: 2.5vh;
+            font-size: 6vh;
+            letter-spacing: 3px;
+            font-weight: 500;
+            margin: 0 0;
         }
     }
-    &>img {
-        width: 15vw;
-        height: 15vw;
+
+    .bannerNoBg {
+        &>figure {
+            width: 30vh;
+            height: 30vh;
+        }
+        &>h1 {
+            font-size: 5vh;
+        }
+        &>h3 {
+            font-size: 3vh;
+        }
     }
 }

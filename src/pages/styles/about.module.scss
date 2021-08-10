@@ -1,24 +1,3 @@
-.page {
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-.section {
-    margin: 0 max(40px, calc(10vw + 10px));
-    width: calc(100% - 2*max(40px, calc(10vw + 10px)));
-}
-
-.text {
-    font-size: 3vh;
-    margin: 10px 0;
-    letter-spacing: 2px;
-    color: grey;
-    margin-bottom: 30px;
-}
-
 .sectionOne {
     display: flex;
     align-items: center;
@@ -26,6 +5,9 @@
     flex-direction: column;
     height: 100vh;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     &>.logoBig {
         background-image: url("../../images/logo_big.png");
         background-position: center;
@@ -228,6 +210,16 @@
         &:nth-child(2) {
             height: 150px;
             width: auto;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .logoHolder {
+        flex-direction: column;
+        &>a {
+            width: 60%;
+            margin: 20px 0;
         }
     }
 }

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image"
+import Page from "../components/Page";
+import Section from "../components/Section";
 import Header from "../components/Header";
 import SectionTitle from "../components/SectionTitle";
 import ReadMore from "../components/ReadMore";
 import Footer from "../components/Footer";
+import Text from "../components/Text";
+import BannerSection from "../components/BannerSection";
 
 import * as styles from "./styles/sis.module.scss";
+
 import SIS2022 from "../components/sis/2022";
 import SIS2021 from "../components/sis/2021";
 import SIS2019 from "../components/sis/2019";
@@ -24,20 +28,20 @@ function SISPage() {
 
     return (<>
         <Header />
-        <main className={styles.page} style={{ backgroundImage: "url(/assets/genericBg.svg)" }}>
-            <section className={[styles.section, styles.sectionOne].join(" ")}>
-                <div className={styles.logoBig} />
+        <Page genericBackground={true}>
+            <BannerSection>
+                <figure />
                 <h1>Swift Innovators'<br />Summit 2022</h1>
                 <h3>Coming Soon!</h3>
                 <ReadMore />
-            </section>
-            <section className={[styles.section, styles.sectionTwo].join(" ")}>
+            </BannerSection>
+            <Section className={styles.sectionTwo}>
                 <SectionTitle title="About Swift Innovators' Summit" />
-                <div className={styles.text}>
+                <Text>
                     <p>The Swift Innovators’ Summit, organised by students for students, celebrate the app development journey of the Swift Accelerator students. Attendees will get to hear from distinguished speakers, explore the apps created and get started on their coding journey at clinics offered by our esteemed trainers.</p>
-                </div>
-            </section>
-            <section className={[styles.section, styles.sectionThree].join(" ")}>
+                </Text>
+            </Section>
+            <Section className={styles.sectionThree}>
                 <div className={styles.btnHolder}>
                     <div className={styles.sisBtn} onClick={() => setYear("2018")} style={{ backgroundColor: year === "2018" ? "var(--secondary)" : "" }}>SIS 2018</div>
                     <div className={styles.sisBtn} onClick={() => setYear("2019")} style={{ backgroundColor: year === "2019" ? "var(--secondary)" : "" }}>SIS 2019</div>
@@ -55,9 +59,9 @@ function SISPage() {
                 </div>
                 <br />
                 <br />
-            </section>
+            </Section>
             <Footer />
-        </main>
+        </Page>
     </>);
 }
 
