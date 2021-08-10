@@ -14,14 +14,15 @@ const IndexPage = (props: PageProps) => {
     <main className={styles.main}>
       <section className={[styles.section, styles.sectionOne].join(' ')}>
         <header className={styles.landingHeader}>
-          <div className={styles.swiftIcon} />
-          <div className={styles.dropDown}>
+          <Link to="/" style={{ marginLeft: 0 }}><div className={styles.swiftIcon} /></Link>
+          {/*<div className={styles.dropDown}>
             <Link to="/">Home</Link>
             <div className={styles.dropDownMenu}>
               <Link to="/tinkertanker">About Tinkertanker</Link>
               <Link to="/programme-outline">Programme Outline</Link>
             </div>
-          </div>
+          </div>*/}
+          <Link to="/about">About</Link>
           <Link to="/sis">Swift Innovators' Summit</Link>
           <Link to="/students">Students</Link>
           <Link to="/apps">Apps</Link>

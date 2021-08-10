@@ -21,15 +21,16 @@ function Header({ startWhite }: { startWhite?: boolean }) {
 
     return (<>
         <header className={[styles.landingHeader, isBeyondScroll ? styles.beyondScroll : startWhite ? styles.startWhite : ""].join(" ")}>
-          <div className={styles.swiftIcon} />
+          <Link to="/"><div className={styles.swiftIcon} /></Link>
           <div className={styles.headerLinks}>
-            <div className={styles.dropDown}>
+            {/*<div className={styles.dropDown}>
               <Link to="/">Home</Link>
               <div className={styles.dropDownMenu}>
                 <Link to="/tinkertanker">About Tinkertanker</Link>
                 <Link to="/programme-outline">Programme Outline</Link>
               </div>
-            </div>
+            </div>*/}
+            <Link to="/about">About</Link>
             <Link to="/sis">Swift Innovators' Summit</Link>
             <Link to="/students">Students</Link>
             <Link to="/apps">Apps</Link>
