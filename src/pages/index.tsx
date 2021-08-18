@@ -14,7 +14,7 @@ const IndexPage = (props: PageProps) => {
     <main className={styles.main}>
       <section className={[styles.section, styles.sectionOne].join(' ')}>
         <header className={styles.landingHeader}>
-          <Link to="/" style={{ marginLeft: 0 }}><div className={styles.swiftIcon} /></Link>
+          <Link to="/" style={{ marginLeft: 0, height: "8vh", width: "8vh" }}><div className={styles.swiftIcon} /></Link>
           {/*<div className={styles.dropDown}>
             <Link to="/">Home</Link>
             <div className={styles.dropDownMenu}>
