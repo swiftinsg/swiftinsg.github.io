@@ -20,7 +20,7 @@ const wwdcWinners = [
         embedLink: "https://www.youtube.com/embed/iHAuAlpHKZE"
     },
     {
-        name: "Wei Xuan",
+        name: "Chua Wei Xuan",
         img: "/assets/news/wwdc/weixuan.jpeg",
         desc1: "WWDC 2021 Swift Student Challenge winner",
         desc2: "SAP Class of 2021",
