@@ -10,7 +10,7 @@ interface Props {
 
 function Page({ children, className, style, genericBackground }: Props) {
 
-    return (<div className={[styles.page, className, genericBackground ? styles.bg : ''].join(" ")} style={style}>
+    return (<div className={[styles.page, className].join(" ")} style={{ ...style, backgroundImage: genericBackground ? 'url(/assets/genericBg.svg)' : '' }}>
         {children}
     </div>)
 }

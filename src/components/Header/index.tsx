@@ -9,7 +9,7 @@ let links = [
   { href: "/sis", name: "Swift Innovators' Summit" },
   { href: "/students", name: "Students" },
   { href: "/apps", name: "Apps" },
-  { href: "/news", name: "News" },
+  { href: "/news", name: "News & Achievements" },
   { href: "/joinus", name: "Join Us" }
 ]
 
