@@ -4,5 +4,5 @@ $horizontalPadding: max(40px, calc(10vw + 10px));
 .section {
     padding-left: $horizontalPadding !important;
     padding-right: $horizontalPadding !important;
-    width: calc(100% - 2*max(40px, calc(10vw + 10px)));
+    // width: calc(100% - 2*max(40px, calc(10vw + 10px)));
 }
