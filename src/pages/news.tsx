@@ -1,14 +1,14 @@
-import React from "react";
-import Page from "../components/Page";
-import Text from "../components/Text"
-import BannerSection from "../components/BannerSection";
-import Section from "../components/Section";
-import Header from "../components/Header";
-import SectionTitle from "../components/SectionTitle";
-import ReadMore from "../components/ReadMore";
-import Footer from "../components/Footer";
-
 import * as styles from "./styles/news.module.scss";
+
+import BannerSection from "../components/BannerSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Page from "../components/Page";
+import React from "react";
+import ReadMore from "../components/ReadMore";
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
+import Text from "../components/Text"
 import newsBanner from "../images/banners/news.jpeg";
 
 const wwdcWinners = [

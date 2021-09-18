@@ -1,14 +1,14 @@
-import React from "react";
+import * as styles from "./styles/apps.module.scss";
+
+import BannerSection from "../components/BannerSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import { Link } from "gatsby";
 import Page from "../components/Page";
-import Section from "../components/Section";
-import Header from "../components/Header";
-import SectionTitle from "../components/SectionTitle";
+import React from "react";
 import ReadMore from "../components/ReadMore";
-import Footer from "../components/Footer";
-import BannerSection from "../components/BannerSection";
-
-import * as styles from "./styles/apps.module.scss";
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
 import appsBanner from "./../images/appBanner.svg";
 
 const currentApps = [

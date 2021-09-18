@@ -1,16 +1,17 @@
-import React from "react";
-import Page from "../components/Page";
-import Section from "../components/Section";
-import Header from "../components/Header";
-import SectionTitle from "../components/SectionTitle";
-import ReadMore from "../components/ReadMore";
-import Footer from "../components/Footer";
-import BannerSection from "../components/BannerSection";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import * as styles from "./styles/students.module.scss";
+
+import BannerSection from "../components/BannerSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Page from "../components/Page";
+import React from "react";
+import ReadMore from "../components/ReadMore";
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
+import Slider from "react-slick";
 import studentsBanner from "../images/banners/students.jpeg"
 
 const testimonials = {

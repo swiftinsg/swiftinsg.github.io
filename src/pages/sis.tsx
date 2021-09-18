@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
-import Page from "../components/Page";
-import Section from "../components/Section";
-import Header from "../components/Header";
-import SectionTitle from "../components/SectionTitle";
-import ReadMore from "../components/ReadMore";
-import Footer from "../components/Footer";
-import Text from "../components/Text";
-import BannerSection from "../components/BannerSection";
-
 import * as styles from "./styles/sis.module.scss";
 
-import SIS2022 from "../components/sis/2022";
-import SIS2021 from "../components/sis/2021";
-import SIS2019 from "../components/sis/2019";
+import React, { useState } from "react";
+
+import BannerSection from "../components/BannerSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { Link } from "gatsby";
+import Page from "../components/Page";
+import ReadMore from "../components/ReadMore";
 import SIS2018 from "../components/sis/2018";
+import SIS2019 from "../components/sis/2019";
+import SIS2021 from "../components/sis/2021";
+import SIS2022 from "../components/sis/2022";
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
+import Text from "../components/Text";
 
 function SISPage() {
 

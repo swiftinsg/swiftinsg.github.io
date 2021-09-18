@@ -1,10 +1,10 @@
 import * as React from "react"
-import { PageProps, Link } from "gatsby";
-
-import SectionTitle from "../components/SectionTitle";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import * as styles from "./styles/index.module.scss";
+
+import { Link, PageProps } from "gatsby";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SectionTitle from "../components/SectionTitle";
 
 // markup
 const IndexPage = (props: PageProps) => {
