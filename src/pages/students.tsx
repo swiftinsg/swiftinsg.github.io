@@ -76,8 +76,7 @@ function StudentsPage() {
 function Testimonial({ img, desc, name, year, i }: { img: string; desc: string; name: string; year: string; i?: number }) {
 
     return (<div
-        className={[styles.testimonial, styles.carouselTestimonial].join(" ")}
-        style={i % 2 == 1 ? { textAlign: 'right', flexDirection: 'row-reverse' } : {}}>
+        className={i % 2 == 1 ? [styles.testimonial, styles.rightTestimonal].join(" ") : styles.testimonial}>
         <img src={`/assets/testimonials/${img}`} className={styles.photo} />
         <div className={styles.description}>
             <p>{desc}</p>
