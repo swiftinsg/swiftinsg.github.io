@@ -40,8 +40,8 @@ function StudentsPage() {
             </BannerSection>
             <div className={styles.stats}>   
                 <div>
-                    <h1>154</h1>
-                    <h3>Alumni</h3>
+                    <h1>212</h1>
+                    <h3>Students</h3>
                 </div>
                 <div>
                     <h1>31</h1>
