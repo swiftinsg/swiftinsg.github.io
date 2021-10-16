@@ -1,14 +1,14 @@
-import React from "react";
-import Page from "../components/Page";
-import Section from "../components/Section";
-import BannerSection from "../components/BannerSection";
-import Header from "../components/Header";
-import SectionTitle from "../components/SectionTitle";
-import ReadMore from "../components/ReadMore";
-import Footer from "../components/Footer";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import * as styles from "./styles/joinus.module.scss";
+
+import BannerSection from "../components/BannerSection";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Page from "../components/Page";
+import React from "react";
+import ReadMore from "../components/ReadMore";
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
 import joinusBanner from "../images/banners/joinus.jpeg";
 
 let steps = [

@@ -53,11 +53,14 @@
 
 .stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     margin-top: 3vh;
+    margin-bottom: 3vh;
     &>div {
         margin: 40px;
+        margin-bottom: 0px;
         padding: 40px;
         width: 25vh;
         border-radius: 30px;
@@ -94,9 +97,8 @@
 
 .sectionThree {
     background-color: var(--primary);
-    margin: 0 50px;
-    width: calc(100% - 2*max(40px, calc(10vw + 10px)) - 100px);
-    margin-bottom: 50px;
+    margin: 0 5vw;
+    margin-bottom: 75px;
     border-radius: 30px;
     &>.slider {
         width: 100%;
@@ -114,19 +116,24 @@
 
 .testimonial {
     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-direction: row;
     margin: 60px 0;
     align-items: center;
     &>.photo {
+        flex-basis: math.div(100,4)*1%;
         border-radius: 50%;
         background-size: contain;
-        min-width: 150px;
-        max-width: 150px;
-        margin: 0 15px;
+        min-width: max(150px,15vw);
+        max-width: max(150px,15vw);
+        margin: 0 15px 15px;
     }
 
     &>.description {
-        display: flex;
-        flex-direction: column;
+        flex-basis: 300px;
+        flex-grow: 1;
+        letter-spacing: 1px;
         margin: 0 15px;
         &>h3 {
             font-size: 2.5vh;
@@ -136,29 +143,18 @@
                 font-weight: 700;
             }
         }
-
         &>p {
-            font-size: 2vh;
+            font-size: 2.5vh;
         }
     }
 }
 
-.carouselTestimonial {
-    padding: 0 50px;
-    width: calc(100% - 100px);
-    &>.photo {
-        border-radius: 50%;
-        background-size: contain;
-        min-width: max(200px, 10vw);
-        min-height: max(200px, 10vw);
-        flex-basis: math.div(100,4)*1%;
-        margin: 0 15px;
-    }
+.rightTestimonal {
     &>.description {
-        letter-spacing: 1px;
+        text-align: right;
         &>p {
-            font-size: 2.5vh;
-            margin-top: 0;
+            text-align: left;
         }
     }
+    flex-direction: row-reverse;
 }
