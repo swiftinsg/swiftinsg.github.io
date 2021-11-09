@@ -18,7 +18,7 @@ function AboutPage() {
         <Page genericBackground={true}>
             <BannerSection>
                 <figure />
-                <h1>About the Swift<br />Accelerator Programme</h1>
+                <h1>About Swift<br />Accelerator Programme</h1>
                 <ReadMore />
             </BannerSection>
             <Section className={styles.sectionTwo}>
