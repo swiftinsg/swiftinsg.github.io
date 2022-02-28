@@ -12,11 +12,7 @@ import SectionTitle from "../components/SectionTitle";
 import appsBanner from "./../images/appBanner.svg";
 
 const currentApps = [
-    { title: "Do It", description: "Stay on top of your tasks.", icon: "2019/Doit.png", link: "https://apps.apple.com/us/app/doit-do-it/id1485829640?ls=1" },
-    { title: "Tasko", description: "Prioritise tasks and manage your time", icon: "2019/Tasko.png", link: "https://apps.apple.com/us/app/tasko/id1485959482?ls=1" },
-    { title: "Scheduler Pro", description: "Get motivated to complete your tasks", icon: "2019/Scheduler%20Pro.png", link: "https://apps.apple.com/us/app/scheduler-pro-plan-your-work/id1486135477" },
-    { title: "Listè", description: "Productivity made easy", icon: "2019/Liste.png", link: "https://apps.apple.com/us/app/listé/id1486116734" },
-    { title: "Tyred", description: "The easy photo todos", icon: "2019/Tyred.png", link: "https://apps.apple.com/us/app/tyred-easy-photo-todos/id1486117252?ls=1" }
+    { title: "Writezi", description: "听写 practice simplified", icon: "2021/writezi.png", link: "https://apps.apple.com/us/app/doit-do-it/id1485829640?ls=1" },
 ];
 
 const appsByCategory = {
@@ -107,6 +103,10 @@ function App({ title, description, icon, link, video }: { title: string; descrip
             {video ? <span><Link to={video}>Watch the video</Link></span> : ""}
         </div>
     </div></Link>)
+}
+
+function PopupApp({ title, description, descriptionLong, icon, link, video }: { title: string; description: string; descriptionLong: string; icon: string; link: string; video: string }) {
+
 }
 
 export default StudentsPage;
