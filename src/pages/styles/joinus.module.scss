@@ -37,6 +37,11 @@
     padding: 10vh 0 1vh;
     display: flex;
     flex-direction: column;
+
+    &>.flexContainer {
+        justify-content: center;
+    }
+
 }
 
 .timeline {
