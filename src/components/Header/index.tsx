@@ -10,7 +10,7 @@ let links = [
   { href: "/students", name: "Students" },
   { href: "/apps", name: "Apps" },
   { href: "/news", name: "News & Achievements" },
-  // { href: "/joinus", name: "Join Us" }
+  { href: "/joinus", name: "Join Us" }
 ]
 
 function Header({ startWhite }: { startWhite?: boolean }) {

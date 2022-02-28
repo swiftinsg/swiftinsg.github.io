@@ -27,7 +27,7 @@ const IndexPage = (props: PageProps) => {
           <Link to="/students">Students</Link>
           <Link to="/apps">Apps</Link>
           <Link to="/news">News & Achievements</Link>
-          {/* <Link to="/joinus">Join Us</Link> */}
+          <Link to="/joinus">Join Us</Link>
         </header>
         <div className={styles.jumboText}>
           <h1>Swift Accelerator<br />Programme</h1>
