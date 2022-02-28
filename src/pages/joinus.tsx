@@ -72,11 +72,17 @@ function StudentsPage() {
                     <p>To apply for the Swift Accelerator Programme, applicants must demonstrate strong aptitude and interest in programming and app design. The application process is as follows:  </p>
                     <ol>
                         <li>Take note of the important dates below for deadlines and briefings. </li>
-                        <li>Confirm that you can attend the vast majority of the scheduled sessions. See the schedule below.</li>
+                        <li>Confirm that you can attend the <b>vast majority</b> of the scheduled sessions. <a href="https://cld.tk.sg/6quE6O6P">See the schedule below.</a></li>
                         <li>Try out Unit 1 of our <a href="https://tk.sg/swiftui-videos-unit1">SwiftUI video series</a>. You may use Swift Playgrounds on iPad or Mac for this. If you have any issues, email us at <a href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</a>.</li>
-                        <li>Prepare a minute-long video introducing yourself and what you end-product based on Unit 1 of our SwiftUI video series. Talk about how you got it to work and any challenges along the way. Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say.</li>
+                        <li>Prepare a <b>minute-long</b> video introducing yourself and your end-product based on [3]. Reflect on your experience creating it (how you got it to work, any challenges, anything new you've tried, etc.). Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say.</li>
                         <li>Prepare any supporting documents, links or any information you think might be relevant when we consider your application</li>
                         <li>Complete an individual entrance test and survey. The test includes coding, design, essay questions (involving the aforementioned video), and should be completed in about an hour.</li>
+                    </ol>
+                    <p><b>Important note:</b> The programme is fully subsidised for successful applicants. Please read through the application form carefully, and ensure, before applying:</p>
+                    <ol>
+                        <li>You can attend a vast majority of the scheduled sessions. <a href="https://cld.tk.sg/6quE6O6P">See the schedule below.</a></li>
+                        <li>You're interested enough in coding, design, and app development to spend a huge chunk of your free time learning and practising — the entire programme lasts 180 hours, and you'll spend more time than that coding on your own.</li>
+                        <li>You're up for a challenge!</li>
                     </ol>
                 </Text>
             </Section>
@@ -91,6 +97,16 @@ function StudentsPage() {
                         <li><b>9 April, Saturday, 9am:</b> First lesson</li>
                     </ul>
                 </Text>
+            </Section>
+            <Section className={styles.sectionTwo}>
+                <SectionTitle title="Schedule for 2022" />
+                <Text>
+                    <p>Please note, this schedule is very tentative, and based on having most classes conducted online — we will aim to bring together the class for face-to-face lessons at Apple, but only if allowed by prevailing safe distancing measures.</p>
+                </Text>
+                <div style={{textAlign: "center"}}>
+                    <img className={styles.schedule} src="/assets/schedule2022.png"></img>
+                    <p><b>You may download a copy <a href="https://cld.tk.sg/6quE6O6">here</a></b></p>
+                </div>
             </Section>
             <Section className={styles.timeline}>
                 <SectionTitle title="Programme Outline" />

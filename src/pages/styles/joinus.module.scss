@@ -34,7 +34,7 @@
 }
 
 .sectionTwo {
-    padding: 10vh 0 5vh;
+    padding: 10vh 0 1vh;
     display: flex;
     flex-direction: column;
 }
@@ -68,4 +68,8 @@
         width: 15vw;
         height: 15vw;
     }
+}
+
+.schedule {
+    width: 50vw;
 }
