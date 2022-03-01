@@ -134,7 +134,7 @@ function StudentsPage() {
                 </Text>
                 <div style={{textAlign: "center"}}>
                     <img className={styles.schedule} src="/assets/schedule2022.png"></img>
-                    <p><b>You may download a copy <Link href="https://cld.tk.sg/6quE6O6">here</Link></b></p>
+                    <p><b>You may download a copy <Link href="https://cld.tk.sg/6quE6O6P">here</Link></b></p>
                 </div>
             </Section>
             <Section className={styles.timeline}>
