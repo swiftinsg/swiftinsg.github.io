@@ -110,6 +110,10 @@ function StudentsPage() {
                         <li>You're up for a challenge!</li>
                     </ol>
                 </Text>
+                <div className={styles.flexContainer}>
+                    <a href="https://tk.sg/swift2022application" className={styles.flavorButton}>
+                        <FontAwesomeIcon icon={["fa", "file-alt"]} />Register for class of 2022</a>
+                </div>
             </Section>
             <Section className={styles.sectionTwo}>
                 <SectionTitle title="Dates to Note" />
