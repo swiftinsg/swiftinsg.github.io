@@ -60,10 +60,10 @@ function StudentsPage() {
                 <h3 id={styles.bodyText}>Applications for the Class of 2022 are open!</h3>
                 {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2021.</h3> */}
                 <div className={styles.flexContainer}>
-                <a href="https://www.instagram.com/swiftinsg" className={styles.flavorButton}>
-                    <FontAwesomeIcon icon={["fab", "instagram"]} />Follow us on Instagram</a>
-                <a href="https://www.youtube.com/channel/UCGYAY8RMWAkx_aDkPV_tFsA" className={styles.flavorButton} id={styles.altButton}>
-                    <FontAwesomeIcon icon={["fab", "youtube"]} />Explore our Youtube Channel</a>
+                    <a href="https://tk.sg/swift2022briefing" className={styles.flavorButton}>
+                        <FontAwesomeIcon icon={["fa", "briefcase"]} />Register for briefing</a>
+                    <a href="https://tk.sg/swift2022application" className={styles.flavorButton} id={styles.altButton}>
+                        <FontAwesomeIcon icon={["fa", "file-alt"]} />Register for class of 2022</a>
                 </div>
                 
                 <ReadMore />
@@ -87,10 +87,6 @@ function StudentsPage() {
                         <li>You're up for a challenge!</li>
                     </ol>
                 </Text>
-                <div style={{textAlign: "center"}} className={styles.flexContainer}>
-                    <a href="https://tk.sg/swift2022application" className={styles.flavorButton} id={styles.flavorButton}>
-                        <FontAwesomeIcon icon={["fa", "file-alt"]} />Apply to join the Class of 2022</a>
-                </div>
             </Section>
             <Section className={styles.sectionTwo}>
                 <SectionTitle title="Dates to Note" />
