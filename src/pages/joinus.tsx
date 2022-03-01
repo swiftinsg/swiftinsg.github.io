@@ -92,7 +92,7 @@ function StudentsPage() {
                 <SectionTitle title="Dates to Note" />
                 <Text>
                     <ul>
-                        <li><b>1 March, Tuesday:</b> Applications open.</li>
+                        <li><b>2 March, Wednesday:</b> Applications open.</li>
                         <li><b>12 March, Saturday, 10am:</b> ​Online briefing introducing the programme, with time for questions. Please register at <Link to="https://tk.sg/swift2022briefing">tk.sg/swift2022briefing</Link>.</li>
                         <li><b>18 March, Friday, 11pm:</b> Applications close.</li>
                         <li><b>28 March, Monday:</b> Successful applicants will be notified through email</li>
