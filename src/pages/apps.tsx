@@ -12,7 +12,19 @@ import SectionTitle from "../components/SectionTitle";
 import appsBanner from "./../images/appBanner.svg";
 
 const currentApps = [
-    { title: "Writezi", description: "听写 practice simplified", icon: "2021/writezi.png", link: "https://apps.apple.com/us/app/doit-do-it/id1485829640?ls=1" },
+    { title: "Writezi", description: "听写 practice simplified", icon: "2021/writezi.png", link: "https://apps.apple.com/us/app/writezi/id1596864534", video: "https://youtu.be/WZCFKMNuk6Y" },
+    { title: "Habitator", description: "Helping you break bad habits!", icon: "2021/habitator.png", link: "https://apps.apple.com/us/app/habitator/id1597273117", video: "" },
+    { title: "GPA Buddy ", description: "Streamline GPA calculation", icon: "2021/gpabuddy.png", link: "https://apps.apple.com/us/app/gpa-buddy/id1596905448", video: "https://youtu.be/V2ahoBLbCBw" },
+    { title: "MoneyCents", description: "A money manager app", icon: "2021/moneycents.png", link: "https://apps.apple.com/us/app/moneycents/id1597220959", video: "https://youtu.be/XCS9J2H39OQ" },
+    { title: "Remorise", description: "Remember efficiently", icon: "2021/remorise.png", link: "https://apps.apple.com/us/app/remorise/id1597260521", video: "https://youtu.be/3bNBQkRrIkU" },
+    { title: "MusicalRooms", description: "A whole new dimension of music learning!", icon: "2021/musicalrooms.png", link: "https://apps.apple.com/us/app/musicalrooms/id1597490110", video: "https://youtu.be/vQ36UXb0X-I" },
+    { title: "Showery", description: "Your shower companion", icon: "2021/showery.png", link: "https://apps.apple.com/us/app/showery/id1597110095", video: "https://youtu.be/6QguOzznpvA" },
+    { title: "Fiducia", description: "Overcome social anxiety and build confidence.", icon: "2021/fiducia.png", link: "https://apps.apple.com/us/app/fiducia/id1597445189", video: "https://youtu.be/d4wiET9aez8" },
+    { title: "StudyZone", description: "Manage your incoming schoolwork!", icon: "2021/studyzone.png", link: "https://apps.apple.com/us/app/studyzone/id1596910040", video: "https://youtu.be/VPIDp0uk5Gk" },
+    { title: "Scam Me Not ", description: "Don’t become the next victim!", icon: "2021/scammenot.png", link: "https://apps.apple.com/us/app/scam-me-not/id1597302940", video: "https://youtu.be/WDe-XRcLQiI" },
+    { title: "ArrivalSG", description: "The perfect travel companion!", icon: "2021/arrivalsg.png", link: "https://apps.apple.com/us/app/arrivalsg/id1597543310", video: "https://youtu.be/FccplOm9jC0" },
+    { title: "ColourLife", description: "Experience different types of colour blindness!", icon: "2021/colourlife.png", link: "https://apps.apple.com/us/app/colourlife/id1597543734", video: "https://youtu.be/ICukZDP_WL4" },
+    { title: "Lateiva", description: "Never be late again!", icon: "2021/lateiva.png", link: "https://apps.apple.com/us/app/lateiva/id1597545628", video: "https://youtu.be/bepLNNzaEeY" },
 ];
 
 const appsByCategory = {
@@ -100,7 +112,7 @@ function App({ title, description, icon, link, video }: { title: string; descrip
         <div>
             <span>{title}</span>
             <span>{description}</span>
-            {video ? <span><Link to={video}>Watch the video</Link></span> : ""}
+            {video ? <span><Link to={video}>Watch our journey!</Link></span> : ""}
         </div>
     </div></Link>)
 }
