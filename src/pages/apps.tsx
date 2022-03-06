@@ -86,7 +86,7 @@ function StudentsPage() {
                 <ReadMore />
             </BannerSection>
             <Section className={styles.sectionTwo}>
-                <SectionTitle title="Current Class Apps" />
+                <SectionTitle title="Apps by the class of 2021" />
                 <div className={styles.appHolder}>
                     {currentApps.map((app) => <App {...app} />)}
                 </div>
