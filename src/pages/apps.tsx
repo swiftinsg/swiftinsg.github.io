@@ -13,7 +13,7 @@ import appsBanner from "./../images/appBanner.svg";
 
 const currentApps = [
     { title: "Writezi", description: "听写 practice simplified", icon: "2021/writezi.png", link: "https://apps.apple.com/us/app/writezi/id1596864534", video: "https://youtu.be/WZCFKMNuk6Y" },
-    { title: "Habitator", description: "Helping you break bad habits!", icon: "2021/habitator.png", link: "https://apps.apple.com/us/app/habitator/id1597273117", video: "" },
+    { title: "Habitator", description: "Helping you break bad habits!", icon: "2021/habitator.png", link: "https://apps.apple.com/us/app/habitator/id1597273117", video: "https://youtu.be/eCCxHhjI6kc" },
     { title: "GPA Buddy ", description: "Streamline GPA calculation", icon: "2021/gpabuddy.png", link: "https://apps.apple.com/us/app/gpa-buddy/id1596905448", video: "https://youtu.be/V2ahoBLbCBw" },
     { title: "MoneyCents", description: "A money manager app", icon: "2021/moneycents.png", link: "https://apps.apple.com/us/app/moneycents/id1597220959", video: "https://youtu.be/XCS9J2H39OQ" },
     { title: "Remorise", description: "Remember efficiently", icon: "2021/remorise.png", link: "https://apps.apple.com/us/app/remorise/id1597260521", video: "https://youtu.be/3bNBQkRrIkU" },
