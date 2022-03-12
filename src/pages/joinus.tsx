@@ -81,7 +81,7 @@ function StudentsPage() {
                 {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2021.</h3> */}
                 <div className={styles.flexContainer}>
                     <a href="https://tk.sg/swift2022briefing" className={styles.flavorButton}>
-                        <FontAwesomeIcon icon={["fa", "briefcase"]} />Register for briefing</a>
+                        <FontAwesomeIcon icon={["fa", "briefcase"]} />Watch the briefing</a>
                     <a href="https://tk.sg/swift2022application" className={styles.flavorButton} id={styles.altButton}>
                         <FontAwesomeIcon icon={["fa", "file-alt"]} />Register for class of 2022</a>
                 </div>
