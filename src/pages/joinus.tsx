@@ -121,8 +121,8 @@ function StudentsPage() {
                     <ul>
                         <li><b>2 March, Wednesday:</b> Applications open.</li>
                         <li><b>12 March, Saturday, 10am:</b> ​Online briefing introducing the programme, with time for questions. Please register at <Link to="https://tk.sg/swift2022briefing">tk.sg/swift2022briefing</Link>.</li>
-                        <li><b>19 March, Saturday, 11pm:</b> Applications close.</li>
-                        <li><b>30 March, Wednesday:</b> Successful applicants will be notified through email</li>
+                        <li><b>26 March (formerly 19 March), Saturday, 11pm:</b> Applications close.</li>
+                        <li><b>1 April (formerly 30 March), Friday:</b> Successful applicants will be notified through email</li>
                         <li><b>9 April, Saturday, 9am:</b> First lesson</li>
                     </ul>
                 </Text>
