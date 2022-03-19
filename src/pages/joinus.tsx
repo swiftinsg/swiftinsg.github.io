@@ -137,6 +137,21 @@ function StudentsPage() {
                     <p><b>You may download a copy <Link href="https://cld.tk.sg/6quE6O6P">here</Link></b></p>
                 </div>
             </Section>
+            <Section className={styles.sectionTwo}>
+                <SectionTitle title="Frequently Asked Questions" />
+                <Text>
+                    <ul>
+                        <li><b>Does the programme cost anything to join?</b> No, the classes and optional certification are sponsored by IMDA.</li>
+                        <li><b>Must students be from the Infocomm/Media/AV Club to join?</b> We will give priority to students from these clubs, as they are IMDA-supported clubs and this is an IMDA-sponsored programme. </li>
+                        <li><b>Can Sec 4s/JC students join?</b> Only if your schedule allows — please take a careful look at the schedule on this page, which is designed for Sec 1-3. IP Year 4s have joined the programme and found our schedule doesn't clash much; we suspect O-level and JC students might have a tougher time in this regard. </li>
+                        <li><b>Do we need a Mac for the programme?</b> Yes. If you don't have one, we should be able to arrange a loan for the programme. But in case we can't get enough loans, we may need to prioritise applicants who have their own. </li>
+                        <li><b>Why did you push back the application deadline?</b> Teachers we spoke to at the graduation this week agreed this holiday week is quite busy for students (and we're guilty of adding to that, running 3 other ongoing competitions & challenges), so this extension would allow students to spend a bit more time on their submissions. </li>
+                        <li><b>My iPad PLD can't run Swift Playgrounds apps, how can I do the activity required for the application?</b> Please watch <Link to="https://www.youtube.com/watch?v=NGBcPkwOAc0">this video</Link> for a workaround.</li>
+                        <li><b>The application requires an iPad, and I don't have one. How?</b> If your school can loan you an iPad for 2-3 hours, you should be able to complete that segment in that time. Alternatively, email us at hello@swiftinsg.org to arrange a time to come to our office (at Henderson Road) to use our iPads for this activity.</li>
+                        <li><b>What's the difference between this and the Swift Explorers Programme?</b> We are also supporting this pilot programme hosted by Crescent Girls' School, which is a light introduction to prototyping and coding, suitable for anyone with a broad interest in design and app development. The Swift Accelerator Programme, on the other hand, goes much deeper into app development, with your own app as a final product. Find out more at <Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link</Link></li>
+                    </ul>
+                </Text>
+            </Section>
             <Section className={styles.timeline}>
                 <SectionTitle title="Programme Outline" />
                 <div>
