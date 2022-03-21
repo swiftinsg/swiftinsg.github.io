@@ -8,8 +8,11 @@ interface Props {
 
 const SectionTitle = ({ title }: Props) => {
 
-    return (<div className={styles.titleHolder}>
-        <span className={styles.title}>{title}</span>
+    return (<div>
+        <div className={styles.titleHolder}>
+            <span className={styles.title}>{title}</span>
+            <hr />
+        </div>
     </div>)
 }
 

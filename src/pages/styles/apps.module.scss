@@ -1,0 +1,66 @@
+.sectionTwo {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    &>h2 {
+        margin-bottom: -30px;
+        letter-spacing: 1px;
+        font-size: 3vh;
+    }
+}
+
+.appHolder {
+    margin: 40px 0 80px 0;
+    display: grid;
+    row-gap: 0px;
+    column-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    padding-left:3vw;
+    &>a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    // margin: 0 20px 0 20px;
+    height: 200px;
+    &>div:nth-child(1) {
+        min-width: 100px;
+        min-height: 100px;
+        border: 1px solid grey;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 15px;
+    }
+    &>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-wrap: anywhere;
+        &>span {
+            margin: 2px 0;
+            letter-spacing: 1px;
+            &:nth-child(1) {
+                font-size: 2.5vh;
+                font-weight: 700;
+            }
+            &:nth-child(2) {
+                font-size: 2vh;
+            }
+            &:nth-child(3) {
+                font-size: 2vh;
+                &>a {
+                    color: black;
+                    &:hover { color: grey; }
+                }
+            }
+        }
+    }
+}

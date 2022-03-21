@@ -1,0 +1,80 @@
+.linkText {
+    color: inherit;
+}
+
+.flavorButton {
+    background-color: var(--primary);
+    text-decoration: none;
+    color:black;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 32px;
+    font-size: 2vh;
+    z-index: 10;
+    &>svg {
+        margin-right: 10px;
+    }
+}
+
+.flexContainer {
+    display: flex; 
+    flex-direction: row;
+}
+
+#bodyText {
+    color: white;
+}
+
+#altButton {
+    background-color: var(--secondary);
+}
+
+.flavorButton:hover {
+    color: grey
+}
+
+.sectionTwo {
+    padding: 10vh 0 1vh;
+    display: flex;
+    flex-direction: column;
+
+    &>.flexContainer {
+        justify-content: center;
+    }
+
+}
+
+.timeline {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    &> div:nth-child(1) {
+        margin-bottom: 5vh;
+    }
+    &> div:nth-child(2) {
+        border-left: 5px dashed var(--secondary);
+        width: 100%
+    }
+}
+
+.outlineDiv {
+    padding: 0 50px 50px;
+    display: flex;
+    align-items: center;
+    &>div:nth-child(1) {
+        &>h1 {
+            font-size: 4vh;
+        }
+        &>p {
+            font-size: 2.5vh;
+        }
+    }
+    &>img {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+.schedule {
+    max-width: 75vw;
+}

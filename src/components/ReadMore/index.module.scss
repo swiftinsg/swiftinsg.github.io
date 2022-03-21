@@ -1,0 +1,14 @@
+.readMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    animation: upAndDown 2s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes upAndDown {
+    0% { bottom: 15px; }
+    50% { bottom: 25px; }
+    100% { bottom: 15px; }
+}

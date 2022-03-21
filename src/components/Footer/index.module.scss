@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--primary);
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &>span {
+        font-size: 2.5vh;
+        text-align: center;
+        margin: 0 20px;
+    }
+    &>div {
+        margin-top: 35px;
+        &>a {
+            color: black;
+            font-size: 35px;
+            margin: 0 20px;
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}

@@ -1,24 +1,25 @@
 .title {
-    font-size: 6vh;
-
-    position: relative;
-
-    float: left;
-
-    &::after {
-        position: absolute;
-        content: '';
-        height: 4px;
-        bottom: -10px; 
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 70%;
-        background: var(--highlight);
-    }
+    font-size: 4vh;
 }
 
 .titleHolder {
-    width: 100%;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    &>hr {
+        width: 60%;
+        border-color: var(--highlight)
+    }
+}
 
+@media (max-width: 840px) {
+    .title {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .titleHolder {
+        align-items: center;
+        width: 100%;
+    }
 }

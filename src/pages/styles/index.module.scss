@@ -1,6 +1,6 @@
 .main {
     background-image: url("../../images/homeShapes-2.svg");
-    background-position: top center;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100vw;
@@ -22,14 +22,37 @@
 .landingHeader {
     display: flex;
     flex-direction: column;
-    &>a {
+    width: fit-content;
+    & a {
         text-decoration: none;
         color: black;
         margin: 10px 5px;
         font-size: 2.5vh;
-        width: 15vw;
         &:hover {
             color: grey
+        }
+    }
+}
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:hover {
+        &>.dropDownMenu {
+            display: flex;
+        }
+    }
+    &>.dropDownMenu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        filter: drop-shadow(0 0px 1px grey);
+        top: 0;
+        left: 80px;
+        position: absolute;
+        &>a {
+            padding: 5px 10px;
         }
     }
 }
@@ -45,6 +68,18 @@
         font-size: 8vh;
         margin: 0;
         font-weight: 500;
+    }
+    &>div {
+        font-size: 35px;
+        margin-top: 25px;
+        &>a {
+            margin-right: 40px;
+            cursor: pointer;
+            color: black;
+            &:hover {
+                color: grey;
+            }
+        }
     }
 }
 
@@ -118,4 +153,34 @@
 
 .sectionFour {
     padding: 20vh 0;
+}
+
+@media (max-height: 650px), (max-width: 520px) {
+    .landingHeader > a {
+        margin: 5px 5px;
+    }
+    .section {
+        margin: 0 max(30px, 4vw);
+        width: calc(100vw - max(50px, 8vw)*2);
+    }
+    .main {
+        background-position: top right;
+    }
+    .jumboText {
+        & > div > a {
+            margin-right: 20px;
+        }
+        & > h1 {
+            line-height: 10vh;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .jumboText {
+        & > h1 {
+            font-size: 6vh;
+            line-height: 8vh;
+        }
+    }
 }

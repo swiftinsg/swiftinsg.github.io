@@ -1,0 +1,163 @@
+
+.landingHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px max(30px, 10vw);
+    width: calc(100% - 2*max(30px, 10vw));
+    position: absolute;
+    background-color: #FFFFFF00;
+    transition: .2s background-color;
+    height: 95px;
+    z-index: 100;
+}
+
+.startWhite {
+    color: white;
+    .headerLinks>a, .headerLinks>div>a {
+        color: white;
+    }
+}
+
+.beyondScroll {
+    background-color: var(--primary);
+    position: fixed;
+    padding: 0 max(30px, 10vw);
+    height: 95px;
+    filter: drop-shadow(0 0px 1px grey);
+    & .dropDownMenu {
+        background-color: var(--primary) !important;
+        top: 95px !important;
+        filter: none !important;
+    }
+}
+
+.headerLinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & a {
+        text-decoration: none;
+        color: black;
+        margin: 10px 18px;
+        font-size: 2vh;
+        letter-spacing: 1px;
+        &:hover {
+            color: grey
+        }
+    }
+
+    & svg {
+        display: none;
+        margin-right: 10px
+    }
+}
+
+.swiftIcon {
+    background-image: url("../../images/logo.png");
+    background-color: var(--primary);
+    min-width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    &:hover {
+        &>.dropDownMenu {
+            display: flex;
+        }
+    }
+    &>.dropDownMenu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        filter: drop-shadow(0 0px 1px grey);
+        top: 110px;
+        position: absolute;
+        &>a {
+            padding: 5px 0;
+        }
+    }
+}
+
+/* If you can't tell, i stole this off w3schools */
+.drawer {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: var(--primary); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.2s; /* 0.5 second transition effect to slide in the drawer */
+}
+  
+/* The navigation menu links */
+.drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black !important;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.drawer a:hover {
+    color: grey;
+}
+  
+/* Position and style the close button (top right corner) */
+.drawer .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media (max-width: 840px) {
+    .landingHeader {
+        padding: 20px max(30px, 5vw);
+        width: calc(100% - 2*max(30px, 5vw));
+    }
+
+    .beyondScroll {
+        padding: 0 max(30px, 5vw);
+    }
+
+    .headerLinks {
+        & > a {
+            margin: 10px 2vw;
+        }
+    }
+
+    .swiftIcon {
+        min-width: 10vh;
+        height: 10vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .headerLinks a {
+        display: none;
+    }
+
+    .drawer a {
+        display: block;
+    }
+
+    .headerLinks svg {
+        display: block;
+        font-size: 24px !important;
+    }
+}
