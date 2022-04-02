@@ -77,7 +77,7 @@ function StudentsPage() {
         <Page className={styles.page}>
             <BannerSection bg={joinusBanner}>
                 <h1>Join Us</h1>
-                <h3 id={styles.bodyText}>Applications for the Class of 2022 have closed</h3>
+                <h3 id={styles.bodyText}>Congratulations to successful applicants of the Class of 2022</h3>
                 <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3>
                 <ReadMore />
             </BannerSection>
