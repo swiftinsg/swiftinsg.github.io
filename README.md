@@ -41,7 +41,7 @@ If you feel confident enough in React, Typescript and SCSS, feel free to follow 
     Do note that if, for some reason, assets are not showing, try restarting the node server. Otherwise, run the following command to clear the cache and rebuild everything:
 
     ```sh
-    $ gastby clean
+    $ npm run clean
     $ npm run develop
     ```
 
