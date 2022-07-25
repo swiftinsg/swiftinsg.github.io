@@ -13,8 +13,36 @@ import newsBanner from "../images/banners/news.jpeg";
 
 const wwdcWinners = [
     {
+        name: "Carl Ian Voller",
+        img: "/assets/news/wwdc/carl.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2018",
+        embedLink: "https://www.youtube.com/embed/m_6MWpc9nD4"
+    },
+    {
+        name: "Karandeep Singh",
+        img: "/assets/news/wwdc/karandeep.png",
+        desc1: "WWDC 2021 and 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2019",
+        embedLink: "https://www.youtube.com/embed/_EpPb6ArXyo"
+    },
+    {
+        name: "James Ryan Chen",
+        img: "/assets/news/wwdc/james.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2021",
+        embedLink: "https://www.youtube.com/embed/sCmf9MyERi0"
+    },
+    {
+        name: "Loh Shao Qi",
+        img: "/assets/news/wwdc/shaoqi.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2022",
+        embedLink: "https://www.youtube.com/embed/XvgWVSjea_A"
+    },
+    {
         name: "Yee Jia Chen",
-        img: "/assets/news/wwdc/jiachen.jpeg",
+        img: "/assets/news/wwdc/jiachen.png",
         desc1: "WWDC 2020 and 2021 Swift Student Challenge winner",
         desc2: "SAP Class of 2018",
         embedLink: "https://www.youtube.com/embed/iHAuAlpHKZE"
