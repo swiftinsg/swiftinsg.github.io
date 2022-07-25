@@ -11,10 +11,40 @@ import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text"
 import newsBanner from "../images/banners/news.jpeg";
 
-const wwdcWinners = [
+const wwdc22Winners = [
+    {
+        name: "Carl Ian Voller",
+        img: "/assets/news/wwdc/carl.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2018",
+        embedLink: "https://www.youtube.com/embed/m_6MWpc9nD4"
+    },
+    {
+        name: "Karandeep Singh",
+        img: "/assets/news/wwdc/karandeep.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2019",
+        embedLink: "https://www.youtube.com/embed/_EpPb6ArXyo"
+    },
+    {
+        name: "James Ryan Chen",
+        img: "/assets/news/wwdc/james.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2021",
+        embedLink: "https://www.youtube.com/embed/sCmf9MyERi0"
+    },
+    {
+        name: "Loh Shao Qi",
+        img: "/assets/news/wwdc/shaoqi.png",
+        desc1: "WWDC 2022 Swift Student Challenge winner",
+        desc2: "SAP Class of 2022",
+        embedLink: "https://www.youtube.com/embed/XvgWVSjea_A"
+    }
+]
+const pastWwdcWinners = [
     {
         name: "Yee Jia Chen",
-        img: "/assets/news/wwdc/jiachen.jpeg",
+        img: "/assets/news/wwdc/jiachen.png",
         desc1: "WWDC 2020 and 2021 Swift Student Challenge winner",
         desc2: "SAP Class of 2018",
         embedLink: "https://www.youtube.com/embed/iHAuAlpHKZE"
@@ -67,8 +97,24 @@ function StudentsPage() {
                 <SectionTitle title="Achievements" />
                 <h1>WWDC Swift Student Challenge</h1>
                 <Text>Supporting students from around the world who love to code, Apple's WWDC Swift Student Challenge provides an opportunity for students to showcase their passion for coding by creating an incredible Swift playground on the topic of their choice. Meet the Swift Student Challenge winners from the Swift Accelerator Program and see their story.</Text>
+                <br />
+                <SectionTitle title="WWDC 2022 SSC Winners" size="3vh" weight="bold" />
                 <>
-                {wwdcWinners.map((winner) =>
+                {wwdc22Winners.map((winner) =>
+                    <div className={styles.wwdcWinner}>
+                        <img src={winner.img} />
+                        <div>
+                            <span>{winner.name}</span>
+                            <span>{winner.desc1}</span>
+                            <span>{winner.desc2}</span>
+                        </div>
+                        <iframe width="560" height="315" src={winner.embedLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                )}
+                </>
+                <SectionTitle title="WWDC 2021 SSC Winners" size="3vh" weight="bold" />
+                <>
+                {pastWwdcWinners.map((winner) =>
                     <div className={styles.wwdcWinner}>
                         <img src={winner.img} />
                         <div>
