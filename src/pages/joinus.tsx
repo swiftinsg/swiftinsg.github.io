@@ -77,18 +77,11 @@ function StudentsPage() {
         <Page className={styles.page}>
             <BannerSection bg={joinusBanner}>
                 <h1>Join Us</h1>
-                <h3 id={styles.bodyText}>Applications for the Class of 2022 are open!</h3>
-                {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2021.</h3> */}
-                <div className={styles.flexContainer}>
-                    <a href="https://tk.sg/swift2022briefing" className={styles.flavorButton}>
-                        <FontAwesomeIcon icon={["fa", "briefcase"]} />Watch the briefing</a>
-                    <a href="https://tk.sg/swift2022application" className={styles.flavorButton} id={styles.altButton}>
-                        <FontAwesomeIcon icon={["fa", "file-alt"]} />Register for class of 2022</a>
-                </div>
-                
+                <h3 id={styles.bodyText}>Congratulations to successful applicants of the Class of 2022</h3>
+                <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3>
                 <ReadMore />
             </BannerSection>
-            <Section className={styles.sectionTwo}>
+            {/* <Section className={styles.sectionTwo}>
                 <SectionTitle title="Application Details" />
                 <Text>
                     <p>To apply for the Swift Accelerator Programme, applicants must demonstrate strong aptitude and interest in programming and app design. The application process is as follows:  </p>
@@ -110,33 +103,7 @@ function StudentsPage() {
                         <li>You're up for a challenge!</li>
                     </ol>
                 </Text>
-                <div className={styles.flexContainer}>
-                    <a href="https://tk.sg/swift2022application" className={styles.flavorButton}>
-                        <FontAwesomeIcon icon={["fa", "file-alt"]} />Register for class of 2022</a>
-                </div>
-            </Section>
-            <Section className={styles.sectionTwo}>
-                <SectionTitle title="Dates to Note" />
-                <Text>
-                    <ul>
-                        <li><b>2 March, Wednesday:</b> Applications open.</li>
-                        <li><b>12 March, Saturday, 10am:</b> ​Online briefing introducing the programme, with time for questions. Please register at <Link to="https://tk.sg/swift2022briefing">tk.sg/swift2022briefing</Link>.</li>
-                        <li><b>26 March (formerly 19 March), Saturday, 11pm:</b> Applications close.</li>
-                        <li><b>1 April (formerly 30 March), Friday:</b> Successful applicants will be notified through email</li>
-                        <li><b>9 April, Saturday, 9am:</b> First lesson</li>
-                    </ul>
-                </Text>
-            </Section>
-            <Section className={styles.sectionTwo}>
-                <SectionTitle title="Schedule for 2022" />
-                <Text>
-                    <p>Please note, this schedule is very tentative, and based on having most classes conducted online — we will aim to bring together the class for face-to-face lessons at Apple, but only if allowed by prevailing safe distancing measures.</p>
-                </Text>
-                <div style={{textAlign: "center"}}>
-                    <img className={styles.schedule} src="/assets/schedule2022.png"></img>
-                    <p><b>You may download a copy <Link href="https://cld.tk.sg/6quE6O6P">here</Link></b></p>
-                </div>
-            </Section>
+            </Section> */}
             <Section className={styles.sectionTwo}>
                 <SectionTitle title="Frequently Asked Questions" />
                 <Text>
@@ -151,6 +118,16 @@ function StudentsPage() {
                         <li><b>What's the difference between this and the Swift Explorers Programme?</b> We are also supporting this pilot programme hosted by Crescent Girls' School, which is a light introduction to prototyping and coding, suitable for anyone with a broad interest in design and app development. The Swift Accelerator Programme, on the other hand, goes much deeper into app development, with your own app as a final product. Find out more at <Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link</Link></li>
                     </ul>
                 </Text>
+            </Section>
+            <Section className={styles.sectionTwo}>
+                <SectionTitle title="Schedule for 2022" />
+                <Text>
+                    <p>Please note, this schedule is very tentative, and based on having most classes conducted online — we will aim to bring together the class for face-to-face lessons at Apple, but only if allowed by prevailing safe distancing measures.</p>
+                </Text>
+                <div style={{textAlign: "center"}}>
+                    <img className={styles.schedule} src="/assets/schedule2022.png"></img>
+                    <p><b>You may download a copy <Link href="https://cld.tk.sg/6quE6O6P">here</Link></b></p>
+                </div>
             </Section>
             <Section className={styles.timeline}>
                 <SectionTitle title="Programme Outline" />

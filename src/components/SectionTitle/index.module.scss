@@ -1,11 +1,12 @@
 .title {
-    font-size: 4vh;
+    font-size: 4vh; 
 }
 
 .titleHolder {
     display: flex;
     float: left;
     flex-direction: column;
+    margin: 1vh 0;
     &>hr {
         width: 60%;
         border-color: var(--highlight)
