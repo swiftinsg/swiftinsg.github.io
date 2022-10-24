@@ -1,20 +1,23 @@
-import * as React from "react"
+import * as React from "react";
 import * as styles from "./styles/index.module.scss";
 
 import { Link, PageProps } from "gatsby";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SectionTitle from "../components/SectionTitle";
 
 // markup
 const IndexPage = (props: PageProps) => {
-
   console.log(styles.main);
   return (
     <main className={styles.main}>
-      <section className={[styles.section, styles.sectionOne].join(' ')}>
+      <section className={[styles.section, styles.sectionOne].join(" ")}>
         <header className={styles.landingHeader}>
-          <Link to="/" style={{ marginLeft: 0, height: "8vh", width: "8vh" }}><div className={styles.swiftIcon} /></Link>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <Link to="/" style={{ marginLeft: 0, height: "8vh", width: "8vh" }}>
+              <div className={styles.swiftIcon} />
+            </Link>
+          </div>
           {/*<div className={styles.dropDown}>
             <Link to="/">Home</Link>
             <div className={styles.dropDownMenu}>
@@ -30,13 +33,51 @@ const IndexPage = (props: PageProps) => {
           <Link to="/joinus">Join Us</Link>
         </header>
         <div className={styles.jumboText}>
-          <h1>Swift Accelerator<br />Programme</h1>
+          <h1>
+            Swift Accelerator
+            <br />
+            Programme
+          </h1>
           <div>
-            <a target="_blank" href="https://www.instagram.com/swiftinsg/"><FontAwesomeIcon icon={["fab", "instagram"]} /></a>
-            <a target="_blank" href="https://twitter.com/swiftinsg"><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
-            <a target="_blank" href="mailto:hello@swiftinsg.org"><FontAwesomeIcon icon={["far", "envelope"]} /></a>
+            <a target="_blank" href="https://www.instagram.com/swiftinsg/">
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
+            </a>
+            <a target="_blank" href="https://twitter.com/swiftinsg">
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+            </a>
+            <a target="_blank" href="mailto:hello@swiftinsg.org">
+              <FontAwesomeIcon icon={["far", "envelope"]} />
+            </a>
           </div>
         </div>
+        <h3
+          style={{
+            backgroundColor: "lightgray",
+            borderRadius: 10,
+            padding: "10px 10px",
+            width: "fit-content",
+            marginTop: 30
+          }}
+        >
+          <span style={{marginRight: 5}}>For updates on Swift Accelerator,</span>
+          <span
+            style={{
+              padding: "5px 15px",
+              backgroundColor: "orange",
+              textDecoration: "none",
+              borderRadius: 10,
+              display: "inline-block",
+            }}
+          >
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="http://tk.sg/swiftmailinglist"
+              target="_blank"
+            >
+              join the newsletter
+            </a>
+          </span>
+        </h3>
       </section>
       {/*<section className={[styles.section, styles.sectionTwo].join(' ')}>
         <SectionTitle title="About" />
@@ -53,7 +94,7 @@ const IndexPage = (props: PageProps) => {
         <SectionTitle title="What's New" />
       </section>*/}
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
