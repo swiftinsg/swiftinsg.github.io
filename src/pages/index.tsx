@@ -59,7 +59,7 @@ const IndexPage = (props: PageProps) => {
             marginTop: 30
           }}
         >
-          <span style={{marginRight: 5}}>For updates on Swift Accelerator,</span>
+          <span style={{marginRight: 5}}>Want to get updates on Swift Accelerator?</span>
           <span
             style={{
               padding: "5px 15px",
@@ -74,7 +74,7 @@ const IndexPage = (props: PageProps) => {
               href="http://tk.sg/swiftmailinglist"
               target="_blank"
             >
-              join the newsletter
+              Join the newsletter
             </a>
           </span>
         </h3>
