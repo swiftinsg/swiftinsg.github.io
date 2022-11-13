@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px max(30px, 10vw);
-    width: calc(100% - 2*max(30px, 10vw));
+    padding: 20px max(20px, 7vw);
+    width: calc(100% - 2*max(30px, 7vw));
     position: absolute;
     background-color: #FFFFFF00;
     transition: .2s background-color;
@@ -40,8 +40,9 @@
     & a {
         text-decoration: none;
         color: black;
-        margin: 10px 18px;
-        font-size: 2vh;
+        margin: auto;
+        padding-right: 10px;
+        font-size: calc(1vh + 0.75vw);
         letter-spacing: 1px;
         &:hover {
             color: grey
@@ -109,6 +110,7 @@
     color: black !important;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 /* When you mouse over the navigation links, change their color */

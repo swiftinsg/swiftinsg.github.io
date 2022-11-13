@@ -70,7 +70,7 @@ function Header({ startWhite }: { startWhite?: boolean }) {
               &times;
             </a>
             {links.map((link) => (
-              <Link style={{whiteSpace: "nowrap"}} to={link.href}>{link.name}</Link>
+              <Link to={link.href}>{link.name}</Link>
             ))}
           </div>
         </div>
