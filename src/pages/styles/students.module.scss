@@ -101,6 +101,7 @@
     margin-bottom: 75px;
     border-radius: 30px;
     &>.slider {
+        // font-size: 1vw;
         width: 100%;
         color: black;
         &>div {
@@ -144,7 +145,7 @@
             }
         }
         &>p {
-            font-size: 2.5vh;
+            font-size: calc(1.5vw + 1vh);
         }
     }
 }
