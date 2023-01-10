@@ -8,6 +8,8 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp"
+    "gatsby-transformer-sharp",
+    "mapbox-gl",
+    "react-mapbox-gl"
   ],
 };
