@@ -23,7 +23,7 @@ const apps: { title: String; description: String; icon: String, link: String, vi
 	{ title: "SnapBoard", description: "Scan & Organise Whiteboards", icon: "2022/SnapBoard.jpg", link: "https://app.swiftinsg.org/snapboard", video: "https://youtube.com" },
 	{ title: "Stockoholic", description: "Fictional Stocks, Real Fun", icon: "2022/Stockoholic.jpg", link: "https://app.swiftinsg.org/stockoholic", video: "https://youtube.com" },
 	{ title: "Horizon", description: "Made for Singapore Youths", icon: "2022/Horizon.jpg", link: "https://app.swiftinsg.org/horizon", video: "https://youtube.com" },
-	{ title: "PlaneMail", description: "Email Planner on the Go", icon: "2022/Planemail.jpg", link: "https://app.swiftinsg.org/planemail", video: "https://youtube.com" },
+	{ title: "PlaneMail", description: "Email Planner on the Go", icon: "2022/PlaneMail.jpg", link: "https://app.swiftinsg.org/planemail", video: "https://youtube.com" },
 	{ title: "ElderlyFit", description: "Mild exercises for elderly", icon: "2022/ElderlyFit.jpg", link: "https://app.swiftinsg.org/elderlyfit", video: "https://youtube.com" },
 	{ title: "VStudy", description: "Your Perfect Study Buddy", icon: "2022/VStudy.jpg", link: "https://app.swiftinsg.org/vstudy", video: "https://youtube.com" },
 	{ title: "NAPFA+", description: "Ace your NAPFA", icon: "2022/NAPFA+.jpg", link: "https://app.swiftinsg.org/napfa", video: "https://youtube.com" },
