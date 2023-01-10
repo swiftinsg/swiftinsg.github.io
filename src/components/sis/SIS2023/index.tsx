@@ -14,20 +14,20 @@ import triviaGameIcon from "../../../images/workshopIcons/triviagame.svg";
 import CowMLIcon from "../../../images/workshopIcons/CowMLicon.svg";
 
 const apps: { title: String; description: String; icon: String, link: String, video: String }[] = [
-	{ title: "Grass", description: "description", icon: "2022/Grass.jpg", link: "https://app.swiftinsg.org/grass", video: "https://youtube.com" },
-	{ title: "GiftDuck", description: "description", icon: "2022/GiftDuck.jpg", link: "https://app.swiftinsg.org/giftduck", video: "https://youtube.com" },
-	{ title: "Money Rush", description: "description", icon: "2022/MoneyRush.jpg", link: "https://app.swiftinsg.org/moneyrush", video: "https://youtube.com" },
-	{ title: "Sturrel", description: "description", icon: "2022/Sturrel.jpg", link: "https://app.swiftinsg.org/sturrel", video: "https://youtube.com" },
-	{ title: "LeMoney", description: "description", icon: "2022/lemoney.jpg", link: "https://app.swiftinsg.org/lemoney", video: "https://youtube.com" },
-	{ title: "Future", description: "description", icon: "2022/future.jpg", link: "https://app.swiftinsg.org/future", video: "https://youtube.com" },
-	{ title: "SnapBoard", description: "description", icon: "2022/snapboard.jpg", link: "https://app.swiftinsg.org/snapboard", video: "https://youtube.com" },
-	{ title: "Stockoholic", description: "description", icon: "2022/stockoholic.jpg", link: "https://app.swiftinsg.org/stockoholic", video: "https://youtube.com" },
-	{ title: "Horizon", description: "description", icon: "2022/horizon.jpg", link: "https://app.swiftinsg.org/horizon", video: "https://youtube.com" },
-	{ title: "PlaneMail", description: "description", icon: "2022/planemail.jpg", link: "https://app.swiftinsg.org/planemail", video: "https://youtube.com" },
-	{ title: "ElderlyFit", description: "description", icon: "2022/elderlyfit.jpg", link: "https://app.swiftinsg.org/elderlyfit", video: "https://youtube.com" },
-	{ title: "VStudy", description: "description", icon: "2022/vstudy.jpg", link: "https://app.swiftinsg.org/vstudy", video: "https://youtube.com" },
-	{ title: "NAPFA+", description: "description", icon: "2022/napfa+.jpg", link: "https://app.swiftinsg.org/napfa", video: "https://youtube.com" },
-	{ title: "HalalSG", description: "description", icon: "2022/halalsg.jpg", link: "https://app.swiftinsg.org/halalsg", video: "https://youtube.com" }
+	{ title: "Grass", description: "Personalise your plants", icon: "2022/Grass.jpg", link: "https://app.swiftinsg.org/grass", video: "https://youtube.com" },
+	{ title: "GiftDuck", description: "Never forget a birthday again!", icon: "2022/GiftDuck.jpg", link: "https://app.swiftinsg.org/giftduck", video: "https://youtube.com" },
+	{ title: "Money Rush", description: "ALoan? Fret not!", icon: "2022/MoneyRush.jpg", link: "https://app.swiftinsg.org/moneyrush", video: "https://youtube.com" },
+	{ title: "Sturrel", description: "Engaging, Educational Learning", icon: "2022/Sturrel.jpg", link: "https://app.swiftinsg.org/sturrel", video: "https://youtube.com" },
+	{ title: "LeMoney", description: "Wishlist, Budgeting, & Finance", icon: "2022/LeMoney.jpg", link: "https://app.swiftinsg.org/lemoney", video: "https://youtube.com" },
+	{ title: "Future", description: "Never forget important dates", icon: "2022/Future.jpg", link: "https://app.swiftinsg.org/future", video: "https://youtube.com" },
+	{ title: "SnapBoard", description: "Scan & Organise Whiteboards", icon: "2022/SnapBoard.jpg", link: "https://app.swiftinsg.org/snapboard", video: "https://youtube.com" },
+	{ title: "Stockoholic", description: "Fictional Stocks, Real Fun", icon: "2022/Stockoholic.jpg", link: "https://app.swiftinsg.org/stockoholic", video: "https://youtube.com" },
+	{ title: "Horizon", description: "Made for Singapore Youths", icon: "2022/Horizon.jpg", link: "https://app.swiftinsg.org/horizon", video: "https://youtube.com" },
+	{ title: "PlaneMail", description: "Email Planner on the Go", icon: "2022/Planemail.jpg", link: "https://app.swiftinsg.org/planemail", video: "https://youtube.com" },
+	{ title: "ElderlyFit", description: "Mild exercises for elderly", icon: "2022/ElderlyFit.jpg", link: "https://app.swiftinsg.org/elderlyfit", video: "https://youtube.com" },
+	{ title: "VStudy", description: "Your Perfect Study Buddy", icon: "2022/VStudy.jpg", link: "https://app.swiftinsg.org/vstudy", video: "https://youtube.com" },
+	{ title: "NAPFA+", description: "Ace your NAPFA", icon: "2022/NAPFA+.jpg", link: "https://app.swiftinsg.org/napfa", video: "https://youtube.com" },
+	{ title: "HalalSG", description: "Find Halal Restaurants Easily", icon: "2022/HalalSG.jpg", link: "https://app.swiftinsg.org/halalsg", video: "https://youtube.com" }
 ];
 
 const workshops: { title: String; desc: String; level: String; instructor: String; imgLink: String }[] = [
