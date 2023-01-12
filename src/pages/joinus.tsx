@@ -91,7 +91,7 @@ function StudentsPage() {
 									color: "black",
 									display: "inline-block"
 								}}
-								to="http://tk.sg/swiftmailinglist"
+								to="https://tk.sg/swift2023briefing"
 								target="_blank"
 							>
 								Sign up for the briefing
