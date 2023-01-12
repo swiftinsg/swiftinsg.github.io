@@ -13,21 +13,93 @@ import ltcIcon from "../../../images/workshopIcons/ltc.svg";
 import triviaGameIcon from "../../../images/workshopIcons/triviagame.svg";
 import CowMLIcon from "../../../images/workshopIcons/CowMLicon.svg";
 
-const apps: { title: String; description: String; icon: String, link: String, video: String }[] = [
+const apps: { title: String; description: String; icon: String; link: String; video: String }[] = [
 	{ title: "Grass", description: "Personalise your plants", icon: "2022/Grass.jpg", link: "https://app.swiftinsg.org/grass", video: "https://youtube.com" },
-	{ title: "GiftDuck", description: "Never forget a birthday again!", icon: "2022/GiftDuck.jpg", link: "https://app.swiftinsg.org/giftduck", video: "https://youtube.com" },
-	{ title: "Money Rush", description: "ALoan? Fret not!", icon: "2022/MoneyRush.jpg", link: "https://app.swiftinsg.org/moneyrush", video: "https://youtube.com" },
-	{ title: "Sturrel", description: "Engaging, Educational Learning", icon: "2022/Sturrel.jpg", link: "https://app.swiftinsg.org/sturrel", video: "https://youtube.com" },
-	{ title: "LeMoney", description: "Wishlist, Budgeting, & Finance", icon: "2022/LeMoney.jpg", link: "https://app.swiftinsg.org/lemoney", video: "https://youtube.com" },
-	{ title: "Future", description: "Never forget important dates", icon: "2022/Future.jpg", link: "https://app.swiftinsg.org/future", video: "https://youtube.com" },
-	{ title: "SnapBoard", description: "Scan & Organise Whiteboards", icon: "2022/SnapBoard.jpg", link: "https://app.swiftinsg.org/snapboard", video: "https://youtube.com" },
-	{ title: "Stockoholic", description: "Fictional Stocks, Real Fun", icon: "2022/Stockoholic.jpg", link: "https://app.swiftinsg.org/stockoholic", video: "https://youtube.com" },
-	{ title: "Horizon", description: "Made for Singapore Youths", icon: "2022/Horizon.jpg", link: "https://app.swiftinsg.org/horizon", video: "https://youtube.com" },
-	{ title: "PlaneMail", description: "Email Planner on the Go", icon: "2022/PlaneMail.jpg", link: "https://app.swiftinsg.org/planemail", video: "https://youtube.com" },
-	{ title: "ElderlyFit", description: "Mild exercises for elderly", icon: "2022/ElderlyFit.jpg", link: "https://app.swiftinsg.org/elderlyfit", video: "https://youtube.com" },
-	{ title: "VStudy", description: "Your Perfect Study Buddy", icon: "2022/VStudy.jpg", link: "https://app.swiftinsg.org/vstudy", video: "https://youtube.com" },
+	{
+		title: "GiftDuck",
+		description: "Never forget a birthday again!",
+		icon: "2022/GiftDuck.jpg",
+		link: "https://app.swiftinsg.org/giftduck",
+		video: "https://youtube.com"
+	},
+	{
+		title: "Money Rush",
+		description: "ALoan? Fret not!",
+		icon: "2022/MoneyRush.jpg",
+		link: "https://app.swiftinsg.org/moneyrush",
+		video: "https://youtube.com"
+	},
+	{
+		title: "Sturrel",
+		description: "Engaging, Educational Learning",
+		icon: "2022/Sturrel.jpg",
+		link: "https://app.swiftinsg.org/sturrel",
+		video: "https://youtube.com"
+	},
+	{
+		title: "LeMoney",
+		description: "Wishlist, Budgeting, & Finance",
+		icon: "2022/LeMoney.jpg",
+		link: "https://app.swiftinsg.org/lemoney",
+		video: "https://youtube.com"
+	},
+	{
+		title: "Future",
+		description: "Never forget important dates",
+		icon: "2022/Future.jpg",
+		link: "https://app.swiftinsg.org/future",
+		video: "https://youtube.com"
+	},
+	{
+		title: "SnapBoard",
+		description: "Scan & Organise Whiteboards",
+		icon: "2022/SnapBoard.jpg",
+		link: "https://app.swiftinsg.org/snapboard",
+		video: "https://youtube.com"
+	},
+	{
+		title: "Stockoholic",
+		description: "Fictional Stocks, Real Fun",
+		icon: "2022/Stockoholic.jpg",
+		link: "https://app.swiftinsg.org/stockoholic",
+		video: "https://youtube.com"
+	},
+	{
+		title: "Horizon",
+		description: "Made for Singapore Youths",
+		icon: "2022/Horizon.jpg",
+		link: "https://app.swiftinsg.org/horizon",
+		video: "https://youtube.com"
+	},
+	{
+		title: "PlaneMail",
+		description: "Email Planner on the Go",
+		icon: "2022/PlaneMail.jpg",
+		link: "https://app.swiftinsg.org/planemail",
+		video: "https://youtube.com"
+	},
+	{
+		title: "ElderlyFit",
+		description: "Mild exercises for elderly",
+		icon: "2022/ElderlyFit.jpg",
+		link: "https://app.swiftinsg.org/elderlyfit",
+		video: "https://youtube.com"
+	},
+	{
+		title: "VStudy",
+		description: "Your Perfect Study Buddy",
+		icon: "2022/VStudy.jpg",
+		link: "https://app.swiftinsg.org/vstudy",
+		video: "https://youtube.com"
+	},
 	{ title: "NAPFA+", description: "Ace your NAPFA", icon: "2022/NAPFA+.jpg", link: "https://app.swiftinsg.org/napfa", video: "https://youtube.com" },
-	{ title: "HalalSG", description: "Find Halal Restaurants Easily", icon: "2022/HalalSG.jpg", link: "https://app.swiftinsg.org/halalsg", video: "https://youtube.com" }
+	{
+		title: "HalalSG",
+		description: "Find Halal Restaurants Easily",
+		icon: "2022/HalalSG.jpg",
+		link: "https://app.swiftinsg.org/halalsg",
+		video: "https://youtube.com"
+	}
 ];
 
 const workshops: { title: String; desc: String; level: String; instructor: String; imgLink: String }[] = [
@@ -100,7 +172,7 @@ function SIS2023() {
 				<SectionTitle title="What will be happening" />
 				<Text>
 					<p>
-						When: 11 Feb 2023, 10am - 4pm
+						When: 11 Feb 2023, 10.15am - 3.30pm
 						<br />
 						Where: St. Joseph's Institution
 					</p>
@@ -147,49 +219,63 @@ function SIS2023() {
 				<h1>Schedule</h1>
 				<table>
 					<tr>
-						<td>10:00 - 11:00</td>
-						<td>Registration + Gallery Walk</td>
+						<td>9:45 - 10:15</td>
+						<td>Workshop Registration</td>
 					</tr>
 					<tr>
-						<td>11:00 - 11:15</td>
-						<td>Opening Speech</td>
-					</tr>
-					<tr>
-						<td>11:15 - 11:40</td>
-						<td>Keynote 1</td>
-					</tr>
-					<tr>
-						<td>11:40 - 12:05</td>
-						<td>Keynote 2</td>
-					</tr>
-					<tr>
-						<td>12:05 - 12:30</td>
-						<td>Graduation Ceremony</td>
-					</tr>
-					<tr>
-						<td>12:30 - 13:30</td>
-						<td>Lunch</td>
-					</tr>
-					<tr>
-						<td>13:30 - 14:30</td>
+						<td>10:15 - 11:15</td>
 						<td>Workshop Session 1</td>
 					</tr>
 					<tr>
-						<td>14:30 - 14:45</td>
-						<td>Break</td>
+						<td>11:15 - 11:25</td>
+						<td>Break & Refreshments</td>
 					</tr>
 					<tr>
-						<td>14:45 - 15:45 </td>
+						<td>11:25 - 12:25 </td>
 						<td>Workshop Session 2</td>
 					</tr>
 					<tr>
-						<td>15:45 </td>
+						<td rowSpan={2}>12:30 - 13:30</td>
+						<td>Celebrations Registration</td>
+					</tr>
+					<tr>
+						<td>Gallery Walk</td>
+					</tr>
+					<tr>
+						<td rowSpan={6}>13:30 - 15:30</td>
+					</tr>
+					<tr>
+						<td>Opening Speech</td>
+					</tr>
+					<tr>
+						<td>Keynote 1</td>
+					</tr>
+					<tr>
+						<td>Keynote 2</td>
+					</tr>
+					<tr>
+						<td>Graduation Ceremony</td>
+					</tr>
+					<tr>
 						<td>End</td>
 					</tr>
+
+					{/* <tr>
+						<td>11:15 - 11:40</td>
+					</tr>
+					<tr>
+						<td>11:40 - 12:05</td>
+					</tr>
+					<tr>
+						<td>12:05 - 12:30</td>
+					</tr>
+					<tr>
+						<td>15:45 </td>
+					</tr> */}
 				</table>
 			</Section>
 			<Section className={styles.gettingThere}>
-				<h1>Getting there</h1>
+				<h1>Venue</h1>
 				<div>
 					<p>
 						St. Joseph's Institution
@@ -197,9 +283,15 @@ function SIS2023() {
 						38 Malcolm Rd, Singapore 308274
 						<br />
 						Nearest MRT station: Stevens
-						<br/>
-						<br/>
-						<a style={{background: "#F6B800", padding: "10px 20px", borderRadius: 15, color: "inherit", textDecoration: "none"}} href="https://maps.apple.com/?address=38%20Malcolm%20Rd,%20Singapore%20308274&auid=12483359173978905814&ll=1.324015,103.828347&lsp=9902&q=St.%20Joseph's%20Institution">Navigate</a>
+						<br />
+						<br />
+						<a
+							style={{ background: "#F6B800", padding: "10px 20px", borderRadius: 15, color: "inherit", textDecoration: "none" }}
+							href="https://www.sji.edu.sg/contact#_ptoh_78094"
+							target="_blank"
+						>
+							Getting there
+						</a>
 					</p>
 					<div>
 						<Map />
