@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Link } from "gatsby";
 import Page from "../components/Page";
-import React from "react";
+import React, { useEffect } from "react";
 import ReadMore from "../components/ReadMore";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
@@ -13,6 +13,10 @@ import Text from "../components/Text";
 
 function AboutPage() {
 
+    useEffect(() => {
+        document.title = "About the Swift Accelerator Programme";
+    });
+    
     return (<>
         <Header />
         <Page genericBackground={true}>
