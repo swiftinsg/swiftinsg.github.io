@@ -51,7 +51,7 @@ function sis2018() {
         <h3>Our Speakers</h3>
         <div className={styles.speakers}>
             <div className={styles.speaker}>
-                <StaticImage src="../../../images/speakers/yuma.jpeg" alt="Yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/yuma.jpeg"} alt="Yuma" className={styles.photo} />
                 <div className={styles.description}>
                     <h3>Yuma Soerianto</h3>
                     <p>Born in Singapore, Yuma started coding when he was six. Today, at eleven, he has published nine apps on the App Store. He was also the youngest scholarship recipient at Apple's Worldwide Developer Conference 2017.</p>

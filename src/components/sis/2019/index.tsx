@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { img } from "gatsby-plugin-image";
 
 import * as styles from "../../../pages/styles/sis.module.scss";
 import * as sisStyles from "./index.module.scss";
@@ -67,7 +67,7 @@ function sis2019() {
         <h3>Our Speakers</h3>
         <div className={styles.speakers}>
             <div className={styles.speaker}>
-                <StaticImage src="../../../images/speakers/danielbudd.jpeg" alt="Daniel Budd" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/danielbudd.jpeg"} alt="Daniel Budd" className={styles.photo} />
                 <div className={styles.description}>
                     <h3>Daniel Budd</h3>
                     <p>Daniel is an Apple Distinguished Educator from Perth, Western Australia and is currently working as a Computer Science and Robotics Specialist at Hong Kong International School.</p>
@@ -80,7 +80,7 @@ function sis2019() {
                     <p>Entrepreneur at heart, with a natural love for code and design. He's the founder of Master, an edutech startup developing some really cool technology and is currently a student at Singapore Poly, studying Cybersecurity.</p>
                     <p>He is also a 2 times WWDC Scholarship 2018 and 2019 recipient.</p>
                 </div>
-                <StaticImage src="../../../images/speakers/daltonng.jpg" alt="Dalton Ng" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/daltonng.jpg"} alt="Dalton Ng" className={styles.photo} />
             </div>
         </div>
     </>)
