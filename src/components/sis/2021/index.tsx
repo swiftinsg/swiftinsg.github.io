@@ -43,7 +43,7 @@ function sis2021() {
         <h3>Our Speakers</h3>
         <div className={styles.speakers}>
             <div className={styles.speaker}>
-                <StaticImage src="../../../images/speakers/yuma.jpeg" alt="Yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/yuma.jpeg"} alt="Yuma" className={styles.photo} />
                 <div className={styles.description}>
                     <h3>Yuma Soerianto</h3>
                     <p>Yuma is a four-time Apple WWDC scholarship winner and has made 10 apps. At the age of ten, he was the youngest scholar at WWDC17. He is featured regularly on the App Store and also teaches coding on his YouTube channel, Anyone Can Code.</p>
@@ -54,10 +54,10 @@ function sis2021() {
                     <h3>Porjai Rangsri</h3>
                     <p>Porjai Rangsri had started dabbling in the world of programming at third grade and has since created 4 apps. Her latest app ‘HappHear’ was created to help the disabled communicate with others faster in an emergency situation. It won her the Swift Student Challenge at WWDC20</p>
                 </div>
-                <StaticImage src="../../../images/speakers/porjai.jpeg" alt="Porjai" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/porjai.jpeg"} alt="Porjai" className={styles.photo} />
             </div>
             <div className={styles.speaker}>
-                <StaticImage src="../../../images/speakers/jiachen.png" alt="Jia Chen" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/jiachen.png"} alt="Jia Chen" className={styles.photo} />
                 <div className={styles.description}>
                     <h3>Yee Jia Chen</h3>
                     <p>Graduating from the Swift Accelerator Programme in 2018, Jia Chen has continued pursuing coding and helping students in the programme. He has published 3 apps on the App Store and won the 2020 Swift Student Challenge at WWDC20</p>

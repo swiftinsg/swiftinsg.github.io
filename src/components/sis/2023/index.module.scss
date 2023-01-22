@@ -175,11 +175,10 @@
           margin: 60px 0;
           align-items: center;
           &>.photo {
-              border-radius: 480px;
+              border-radius: 50%;
               background-size: contain;
               width: 20%;
               margin: 0 15px;
-              aspect-ratio: 1/1;
           }
 
           &>.description {
@@ -276,7 +275,7 @@
     padding: 2vw;
     border-radius: 15px;
     display: flex;
-    background-color: #FCF4C4;
+    background-color: var(--primary);
     &>img {
         width: max(100px ,calc(5vw + 3vh));
         height: max(100px ,calc(5vw + 3vh));;
@@ -328,8 +327,9 @@
           flex-direction: column;
           margin-top: 0;
           &>.photo {
-              width: min(calc(30vw), calc(100% - 20vw));
+              width: calc(100% - 8vw);
               margin: 4vw;
+              border-radius: 50%;
           }
       }
   }

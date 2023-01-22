@@ -144,11 +144,11 @@ function StudentsPage() {
 								<b>Do we need a Mac for the programme?</b> Yes. If you don't have one, we should be able to arrange a loan for the programme.
 								But in case we can't get enough loans, we may need to prioritise applicants who have their own.{" "}
 							</li>
-							<li>
+							{/* <li>
 								<b>Why did you push back the application deadline?</b> Teachers we spoke to at the graduation this week agreed this holiday week
 								is quite busy for students (and we're guilty of adding to that, running 3 other ongoing competitions & challenges), so this
 								extension would allow students to spend a bit more time on their submissions.{" "}
-							</li>
+							</li> */}
 							<li>
 								<b>My iPad PLD can't run Swift Playgrounds apps, how can I do the activity required for the application?</b> Please watch{" "}
 								<Link to="https://www.youtube.com/watch?v=NGBcPkwOAc0">this video</Link> for a workaround.
@@ -159,11 +159,9 @@ function StudentsPage() {
 								to our office (at Henderson Road) to use our iPads for this activity.
 							</li>
 							<li>
-								<b>What's the difference between this and the Swift Explorers Programme?</b> We are also supporting this pilot programme hosted
-								by Crescent Girls' School, which is a light introduction to prototyping and coding, suitable for anyone with a broad interest in
-								design and app development. The Swift Accelerator Programme, on the other hand, goes much deeper into app development, with your
+								<b>What's the difference between this and the Swift Explorers Programme?</b> We are also supporting this programme hoste by Crescent Girls' School, which is a light introduction to prototyping and coding, suitable for anyone with a broad interest in design and app development. The Swift Accelerator Programme, on the other hand, goes much deeper into app development, with your
 								own app as a final product. Find out more at{" "}
-								<Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link</Link>
+								<Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link.</Link> Past participants from the Swift Explorers programme, especially finalists in the showcase phase, would be well equipped to apply for the Swift Accelerator Programme!
 							</li>
 						</ul>
 					</Text>
