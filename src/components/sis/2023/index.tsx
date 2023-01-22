@@ -366,20 +366,18 @@ function SIS2023() {
 
 function AppCard({ info }) {
     return (
-        <div className={styles.appCard}>
-            <div
-                className={styles.img}
-                style={{ backgroundImage: `url(/assets/appIcons/${info.icon})` }}
-            />
-            <div className={styles.div}>
+        <a target="_blank" href={info.link} className={styles.appCard}>
+            <div>
+                <div
+                    className={styles.img}
+                    style={{ backgroundImage: `url(/assets/appIcons/${info.icon})` }}
+                />
+                <br />
                 <p>
-                    <b>{info.title}</b>
+                    {info.title}
                 </p>
-                <a target="_blank" href={info.link}>
-                    Get App
-                </a>
             </div>
-        </div>
+        </a>
     );
 }
 
@@ -393,15 +391,15 @@ function WorkshopCard({ info }) {
             <img src={info.imgLink} />
             <div>
                 <p>
-                    <p
+                    <span
                         className={styles.levelLabel}
                         style={{
                             backgroundColor: info.level == "Beginner" ? "#9FE399" : "#FF76F1",
                         }}
                     >
                         {info.level}
-                    </p>
-                    <p className={styles.title}>{info.title}</p>
+                    </span>
+                    <h2 className={styles.title}>{info.title}</h2>
                 </p>
                 {/* {bigScreen ? <div /> : <p>{info.desc}</p>} */}
                 <p>{info.desc}</p>
