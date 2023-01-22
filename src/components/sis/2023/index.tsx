@@ -175,6 +175,11 @@ const workshops: {
 let width = 0;
 
 function SIS2023() {
+
+    useEffect(() => {
+        document.title = "Swift Innovators' Summit 2023";
+    });
+    
     return (
         <>
             <Section className={styles.sectionOne}>

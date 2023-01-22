@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { img } from "gatsby-plugin-image";
 
 import * as styles from "../../../pages/styles/sis.module.scss";
 import * as sisStyles from "./index.module.scss";
 
 function sis2019() {
+
+    useEffect(() => {
+        document.title = "Swift Innovators' Summit 2019";
+    });
+    
     return (<>
         <div className={styles.bannerHolder}>
             <div className={[styles.banner, sisStyles.bg].join(" ")} />

@@ -27,6 +27,9 @@ const codeStyles = {
 
 // markup
 const NotFoundPage = () => {
+  React.useEffect(() => {
+    document.title = "Not Found 😔";
+  });
   return (
     <main style={pageStyles}>
       <title>Not found</title>

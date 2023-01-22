@@ -9,6 +9,9 @@ import SectionTitle from "../components/SectionTitle";
 // markup
 const IndexPage = (props: PageProps) => {
   console.log(styles.main);
+  React.useEffect(() => {
+    document.title = "Swift Innvators' Summit";
+  });
   return (
     <main className={styles.main}>
       <section className={[styles.section, styles.sectionOne].join(" ")}>
