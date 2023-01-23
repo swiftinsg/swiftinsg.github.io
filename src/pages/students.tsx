@@ -13,6 +13,7 @@ import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import Slider from "react-slick";
 import studentsBanner from "../images/banners/students.jpeg"
+import { useEffect } from "react";
 
 const testimonials = {
     top: [
@@ -31,7 +32,9 @@ const testimonials = {
 }
 
 function StudentsPage() {
-
+    useEffect(() => {
+		document.title = "Students"
+	}, [])
     return (<>
         <Header startWhite={true} />
         <Page>

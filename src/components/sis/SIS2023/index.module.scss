@@ -175,7 +175,8 @@
           margin: 60px 0;
           align-items: center;
           &>.photo {
-              border-radius: 480px;
+              border-radius: 100%;
+              transform: translateZ(0);
               background-size: contain;
               width: 20%;
               margin: 0 15px;

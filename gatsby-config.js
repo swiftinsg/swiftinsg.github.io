@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "swiftinsg.org",
+    // title: "swiftinsg.org",
   },
   plugins: [
     "gatsby-plugin-sass",

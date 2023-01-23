@@ -10,6 +10,7 @@ import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text"
 import newsBanner from "../images/banners/news.jpeg";
+import { useEffect } from "react";
 
 const wwdc22Winners = [
     {
@@ -59,7 +60,9 @@ const pastWwdcWinners = [
 ]
 
 function StudentsPage() {
-
+    useEffect(() => {
+		document.title = "News & Achievements"
+	}, [])
     return (<>
         <Header startWhite={true} />
         <Page>

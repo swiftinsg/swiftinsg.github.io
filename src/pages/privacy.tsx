@@ -10,8 +10,12 @@ import ReadMore from "../components/ReadMore";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text";
+import { useEffect } from "react";
 
 function PrivacyPage() {
+    useEffect(() => {
+		document.title = "Privacy Policy";
+	}, [])
     return (<>
         <Header />
         <Page genericBackground={true}>

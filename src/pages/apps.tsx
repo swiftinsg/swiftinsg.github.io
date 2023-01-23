@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Link } from "gatsby";
 import Page from "../components/Page";
-import React from "react";
+import React, { useEffect } from "react";
 import ReadMore from "../components/ReadMore";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
@@ -317,6 +317,10 @@ const appsByCategory = {
 };
 
 function StudentsPage() {
+	useEffect(() => {
+		document.title = "Apps"
+	}, [])
+	
 	return (
 		<>
 			<Header />
@@ -324,11 +328,11 @@ function StudentsPage() {
 				<BannerSection bg={appsBanner} bgStyle={{ backgroundSize: "150vh", filter: "none" }} style={{ color: "black" }}>
 					<h1>Apps</h1>
 					{/*<div className={styles.stats}>   
-                    <div>
-                        <h1>33</h1>
-                        <h3>Apps Published</h3>
-                    </div>
-                </div>*/}
+							<div>
+									<h1>33</h1>
+									<h3>Apps Published</h3>
+							</div>
+						</div>*/}
 					<ReadMore />
 				</BannerSection>
 				<Section className={styles.sectionTwo}>
