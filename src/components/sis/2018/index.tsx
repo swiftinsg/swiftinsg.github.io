@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "../../../pages/styles/sis.module.scss";
 import * as sisStyles from "./index.module.scss";
 
 function sis2018() {
+
+    useEffect(() => {
+        document.title = "Swift Innovators' Summit 2018";
+    });
+    
     return (<>
         <div className={styles.bannerHolder}>
             <div className={[styles.banner, sisStyles.bg].join(" ")} />
@@ -51,7 +56,7 @@ function sis2018() {
         <h3>Our Speakers</h3>
         <div className={styles.speakers}>
             <div className={styles.speaker}>
-                <StaticImage src="../../../images/speakers/yuma.jpeg" alt="Yuma" className={styles.photo} style={{ borderRadius: '50%' }} />
+                <img src={"/assets/speakers/yuma.jpeg"} alt="Yuma" className={styles.photo} />
                 <div className={styles.description}>
                     <h3>Yuma Soerianto</h3>
                     <p>Born in Singapore, Yuma started coding when he was six. Today, at eleven, he has published nine apps on the App Store. He was also the youngest scholarship recipient at Apple's Worldwide Developer Conference 2017.</p>

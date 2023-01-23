@@ -42,22 +42,31 @@
             overflow: auto;
             padding: 10px;
             .appCard {
-                min-width: 300px;
+                min-width: max(200px, 10vw+40);
                 background-color: #FCF4C4;
                 border-radius: 15px;
-                display: flex;
-                &>.img {
-                    width: max(100px, 10vw);
-                    height: max(100px, 10vw);
-                    background-size: contain;
-                    border-radius: 15px;
-                    margin: 10px;
-                }
-                &>.div {
-                    margin: auto 0px;
-                    margin-right: 10px;
+                display: flex;      
+                text-decoration: none;          
+                &>div{
+                    align-items: center;
+                    margin: auto;
+                    &>.img {
+                        width: max(100px, 10vw);
+                        height: max(100px, 10vw);
+                        background-size: contain;
+                        border-radius: 22%;
+                        margin: 20px;
+                        display: block;
+                        border: 1px solid black;
+                    }
                     &>p {
                         font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: black;
+                        text-decoration: none;
+                        margin-top: 0px;
+                        
                     }
                 }
             }
@@ -175,12 +184,10 @@
           margin: 60px 0;
           align-items: center;
           &>.photo {
-              border-radius: 100%;
-              transform: translateZ(0);
+              border-radius: 50%;
               background-size: contain;
               width: 20%;
               margin: 0 15px;
-              aspect-ratio: 1/1;
           }
 
           &>.description {
@@ -274,13 +281,13 @@
 
 .workshopCard {
     margin: 30px 0px;
-    padding: 2vw;
+    padding: 2vw 5vw 2vw 5vw;
     border-radius: 15px;
     display: flex;
     background-color: #FCF4C4;
     &>img {
         width: max(100px ,calc(5vw + 3vh));
-        height: max(100px ,calc(5vw + 3vh));;
+        height: max(100px ,calc(5vw + 3vh));
         object-fit: cover;
         border-radius: 15px;
         margin: auto 20px auto 0px;
@@ -294,9 +301,10 @@
                 padding: 10px 20px;
                 border-radius: 99px;
                 margin: auto 0px;
+                margin-right: 5px;
             }
             &>.title {
-                margin: 0px 0px 0px 10px;
+                margin: 10px 0px 0px 0px;
                 font-size: calc(1.5vh + 1vw);
             }
         }
@@ -329,8 +337,9 @@
           flex-direction: column;
           margin-top: 0;
           &>.photo {
-              width: min(calc(30vw), calc(100% - 20vw));
+              width: calc(100% - 8vw);
               margin: 4vw;
+              border-radius: 50%;
           }
       }
   }

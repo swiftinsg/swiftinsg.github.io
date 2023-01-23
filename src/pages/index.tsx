@@ -9,9 +9,9 @@ import { useEffect } from "react";
 
 // markup
 const IndexPage = (props: PageProps) => {
-  useEffect(() => {
-    document.title = "Swiftinsg"
-}, [])
+  React.useEffect(() => {
+    document.title = "Swift Innvators' Summit";
+  });
   return (
     <main className={styles.main}>
       <section className={[styles.section, styles.sectionOne].join(" ")}>

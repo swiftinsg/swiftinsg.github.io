@@ -12,7 +12,7 @@ import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text";
 import PastSIS from "../components/sis/PastSIS";
-import SIS2023 from "../components/sis/SIS2023";
+import SIS2023 from "../components/sis/2023";
 import sisBanner from "../images/banners/sisBanner.jpeg";
 import { useEffect } from "react";
 

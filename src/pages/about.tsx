@@ -12,9 +12,11 @@ import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text";
 
 function AboutPage() {
+
     useEffect(() => {
-        document.title = "About"
-    }, [])
+        document.title = "About the Swift Accelerator Programme";
+    });
+    
     return (<>
         <Header />
         <Page genericBackground={true}>

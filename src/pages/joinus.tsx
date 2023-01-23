@@ -5,14 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Page from "../components/Page";
-import React from "react";
+import React, { useEffect } from "react";
 import ReadMore from "../components/ReadMore";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import joinusBanner from "../images/banners/joinus.jpeg";
 import Text from "../components/Text";
 import { Link } from "gatsby";
-import { useEffect } from "react";
 
 let steps = [
 	{
@@ -72,9 +71,11 @@ let steps = [
 ];
 
 function StudentsPage() {
+
 	useEffect(() => {
-		document.title = "Join Us"
-	}, [])
+		document.title = "Join the Class of 2023";
+	});
+	
 	return (
 		<>
 			<Header startWhite={true} />
@@ -148,7 +149,7 @@ function StudentsPage() {
 								<b>Do we need a Mac for the programme?</b> Yes. If you don't have one, we should be able to arrange a loan for the programme.
 								But in case we can't get enough loans, we may need to prioritise applicants who have their own.{" "}
 							</li>
-							<li>
+							{/* <li>
 								<b>Why did you push back the application deadline?</b> Teachers we spoke to at the graduation this week agreed this holiday week
 								is quite busy for students (and we're guilty of adding to that, running 3 other ongoing competitions & challenges), so this
 								extension would allow students to spend a bit more time on their submissions. Past participants from the Swift Explorers programme, 
@@ -168,8 +169,8 @@ function StudentsPage() {
 								by Crescent Girls' School, which is a light introduction to prototyping and coding, suitable for anyone with a broad interest in
 								design and app development. The Swift Accelerator Programme, on the other hand, goes much deeper into app development, with your
 								own app as a final product. Find out more at{" "}
-								<Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link</Link>
-							</li>
+								<Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link.</Link> Past participants from the Swift Explorers programme, especially finalists in the showcase phase, would be well equipped to apply for the Swift Accelerator Programme!
+					</li>*/}
 						</ul>
 					</Text>
 				</Section>

@@ -7,13 +7,12 @@ import BannerSection from "../components/BannerSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Page from "../components/Page";
-import React from "react";
+import React, { useEffect } from "react";
 import ReadMore from "../components/ReadMore";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import Slider from "react-slick";
 import studentsBanner from "../images/banners/students.jpeg"
-import { useEffect } from "react";
 
 const testimonials = {
     top: [
@@ -33,8 +32,9 @@ const testimonials = {
 
 function StudentsPage() {
     useEffect(() => {
-		document.title = "Students"
-	}, [])
+        document.title = "Our Students";
+    });
+
     return (<>
         <Header startWhite={true} />
         <Page>

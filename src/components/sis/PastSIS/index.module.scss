@@ -109,7 +109,7 @@
           &>.photo {
               border-radius: 50%;
               background-size: contain;
-              width: 480px;
+              width: 20%;
               margin: 0 15px;
           }
 
@@ -192,6 +192,7 @@
           &>.photo {
               width: calc(100% - 8vw);
               margin: 4vw;
+              border-radius: 50%;
           }
       }
   }

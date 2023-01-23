@@ -317,9 +317,10 @@ const appsByCategory = {
 };
 
 function StudentsPage() {
+
 	useEffect(() => {
-		document.title = "Apps"
-	}, [])
+		document.title = "Our Applications";
+	});
 	
 	return (
 		<>
