@@ -5,10 +5,10 @@ import { Link, PageProps } from "gatsby";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SectionTitle from "../components/SectionTitle";
+import { useEffect } from "react";
 
 // markup
 const IndexPage = (props: PageProps) => {
-  console.log(styles.main);
   React.useEffect(() => {
     document.title = "Swift Innvators' Summit";
   });

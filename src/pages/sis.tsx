@@ -14,10 +14,13 @@ import Text from "../components/Text";
 import PastSIS from "../components/sis/PastSIS";
 import SIS2023 from "../components/sis/2023";
 import sisBanner from "../images/banners/sisBanner.jpeg";
+import { useEffect } from "react";
 
 function SISPage() {
 	const [showSIS2023, setShowSIS2023] = useState(true);
-
+	useEffect(() => {
+		document.title = "Swift Innovators' Summit"
+	}, [])
 	return (
 		<>
 			<Header startWhite={true} />

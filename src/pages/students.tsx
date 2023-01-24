@@ -31,6 +31,9 @@ const testimonials = {
 }
 
 function StudentsPage() {
+    useEffect(() => {
+        document.title = "Our Students";
+    });
 
     useEffect(() => {
         document.title = "Our Students";

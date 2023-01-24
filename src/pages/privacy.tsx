@@ -17,6 +17,7 @@ function PrivacyPage() {
         document.title = "Privacy Policy";
     });
 
+
     return (<>
         <Header />
         <Page genericBackground={true}>

@@ -329,11 +329,11 @@ function StudentsPage() {
 				<BannerSection bg={appsBanner} bgStyle={{ backgroundSize: "150vh", filter: "none" }} style={{ color: "black" }}>
 					<h1>Apps</h1>
 					{/*<div className={styles.stats}>   
-                    <div>
-                        <h1>33</h1>
-                        <h3>Apps Published</h3>
-                    </div>
-                </div>*/}
+							<div>
+									<h1>33</h1>
+									<h3>Apps Published</h3>
+							</div>
+						</div>*/}
 					<ReadMore />
 				</BannerSection>
 				<Section className={styles.sectionTwo}>

@@ -1,5 +1,4 @@
 import * as styles from "./styles/news.module.scss";
-
 import BannerSection from "../components/BannerSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -59,6 +58,9 @@ const pastWwdcWinners = [
 ]
 
 function StudentsPage() {
+    useEffect(() => {
+        document.title = "News & Achievements";
+    });
 
     useEffect(() => {
         document.title = "News & Achievements";
