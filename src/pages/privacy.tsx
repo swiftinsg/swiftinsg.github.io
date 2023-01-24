@@ -12,9 +12,12 @@ import SectionTitle from "../components/SectionTitle";
 import Text from "../components/Text";
 
 function PrivacyPage() {
+
     useEffect(() => {
-		document.title = "Privacy Policy";
-	})
+        document.title = "Privacy Policy";
+    });
+
+
     return (<>
         <Header />
         <Page genericBackground={true}>

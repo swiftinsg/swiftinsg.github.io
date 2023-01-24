@@ -35,6 +35,10 @@ function StudentsPage() {
         document.title = "Our Students";
     });
 
+    useEffect(() => {
+        document.title = "Our Students";
+    });
+
     return (<>
         <Header startWhite={true} />
         <Page>

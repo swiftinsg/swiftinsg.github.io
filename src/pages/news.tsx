@@ -62,6 +62,10 @@ function StudentsPage() {
         document.title = "News & Achievements";
     });
 
+    useEffect(() => {
+        document.title = "News & Achievements";
+    });
+
     return (<>
         <Header startWhite={true} />
         <Page>
