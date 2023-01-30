@@ -150,7 +150,7 @@ const workshops: {
         imgLink: droneIcon,
     },
     {
-        title: "Building a Trivia game",
+        title: "Building a Trivia Game",
         desc: "Have you ever wondered how the apps on your devices are made? In this workshop, you'll learn how to use Swift Playgrounds & SwiftUI to build your very first app: a fun and engaging game of trivia!",
         level: "Advanced",
         instructor: "By Swift Accelerator Alumni",
@@ -164,7 +164,7 @@ const workshops: {
         imgLink: CowMLIcon,
     },
     {
-        title: "Building an AR Dice app",
+        title: "Building an AR Dice App",
         desc: "Use Swift, Xcode, and Reality Composer to create your very own augmented reality experience that interacts with physics! Throw your virtual dice up, make it spin, and fall back down to the ground.",
         level: "Advanced",
         instructor: "By Swift Accelerator Alumni",
