@@ -101,35 +101,70 @@ function StudentsPage() {
 							>
 								Sign up for the briefing
 							</Link>
+							<br/>
+							<br/>
+							<Link
+								style={{
+									padding: "10px 15px",
+									backgroundColor: "orange",
+									textDecoration: "none",
+									borderRadius: 10,
+									color: "black",
+									display: "inline-block"
+								}}
+								to="https://tk.sg/swift2023application"
+								target="_blank"
+							>
+								Sign up for the programme
+							</Link>
 						</h3>
-						<h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3>
+						{/* <h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3> */}
 					</h3>
 					<ReadMore />
 				</BannerSection>
-				{/* <Section className={styles.sectionTwo}>
+				<Section className={styles.sectionTwo}>
                 <SectionTitle title="Application Details" />
                 <Text>
                     <p>To apply for the Swift Accelerator Programme, applicants must demonstrate strong aptitude and interest in programming and app design. The application process is as follows:  </p>
                     <ol>
                         <li>Take note of the important dates below for deadlines and briefings. </li>
-                        <li>Confirm that you can attend the <b>vast majority</b> of the scheduled sessions. <Link to="https://cld.tk.sg/6quE6O6P">See the schedule below.</Link></li>
-                        <li>Try out Unit 1 of our <Link to="https://tk.sg/swiftui-videos-unit1">SwiftUI video series</Link>. You may use <Link to="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</Link> on iPad or Mac for this. If you have any issues, email us at <Link to="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link>.</li>
+                        <li>Confirm that you can attend the <b>vast majority</b> of the scheduled sessions. <Link to="https://cld.tk.sg/nOu1rkJ7">See the schedule here.</Link></li>
+                        {/* <li>Try out Unit 1 of our <Link to="https://tk.sg/swiftui-videos-unit1">SwiftUI video series</Link>. You may use <Link to="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</Link> on iPad or Mac for this. If you have any issues, email us at <Link to="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link>.</li>
                         <ul>
                             <li>If you are using a managed iPad that is unable to build App projects or using Swift Playgrounds 4 for Mac, you can create a normal Playground and paste in the code from <Link to="https://tk.sg/swiftpgtemplate">https://tk.sg/swiftpgtemplate</Link>.</li>
                         </ul>
-                        <li>Prepare a <b>minute-long</b> video introducing yourself and your end-product based on [3]. Reflect on your experience creating it (how you got it to work, any challenges, anything new you've tried, etc.). Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say.</li>
+                        <li>Prepare a <b>minute-long</b> video introducing yourself and your end-product based on [3]. Reflect on your experience creating it (how you got it to work, any challenges, anything new you've tried, etc.). Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say.</li> */}
+                        <li>Prepare a <b>minute-long</b> video introducing yourself and why you want to join the Swift Accelerator Programme. You may feel free to bring up any relevant past experience if you wish. Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say. Do note that the maximum time allowed is <b>3 minutes</b>, thereafter we will stop watching your video.</li>
                         <li>Prepare any supporting documents, links or any information you think might be relevant when we consider your application</li>
                         <li>Complete an individual entrance test and survey. The test includes coding, design, essay questions (involving the aforementioned video), and should be completed in about an hour.</li>
                     </ol>
-                    <p><b>Important note:</b> The programme is fully subsidised for successful applicants. Please read through the application form carefully, and ensure, before applying:</p>
+                    <p><b>Important note:</b> The programme is <b>fully subsidised</b> for successful applicants. Please read through the application form carefully, and ensure, before applying:</p>
                     <ol>
-                        <li>You can attend a vast majority of the scheduled sessions. <Link to="https://cld.tk.sg/6quE6O6P">See the schedule below.</Link></li>
+                        <li>You can attend a vast majority of the scheduled sessions. <Link to="https://cld.tk.sg/nOu1rkJ7">See the schedule here.</Link></li>
                         <li>You're interested enough in coding, design, and app development to spend a huge chunk of your free time learning and practising — the entire programme lasts 180 hours, and you'll spend more time than that coding on your own.</li>
                         <li>You're up for a challenge!</li>
                     </ol>
                 </Text>
-            </Section> */}
-				<Section className={styles.sectionTwo}>
+				<SectionTitle title="Key Dates" />
+					<Text>
+						<ul>
+							<li>
+								<b>Applications Open:</b> 1 Feburary
+							</li>
+							<li>
+								<b>Programme Briefing:</b> 11 Feburary
+							</li>
+							<li>
+								<b>Applications Close:</b> 26 February
+							</li>
+							<li>
+								<b>Results Release:</b> 6 March (by the end of the day)
+							</li>
+							<li>
+								<b>First Lesson:</b> 11 March
+							</li>	
+						</ul>
+					</Text>
 					<SectionTitle title="Frequently Asked Questions" />
 					<Text>
 						<ul>
@@ -186,7 +221,7 @@ function StudentsPage() {
 						<img className={styles.schedule} src="/assets/schedule2022.png"></img>
 						<p>
 							<b>
-								You may download a copy <Link href="https://cld.tk.sg/6quE6O6P">here</Link>
+								You may download a copy <Link href="https://cld.tk.sg/nOu1rkJ7">here</Link>
 							</b>
 						</p>
 					</div>
