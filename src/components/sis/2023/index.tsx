@@ -391,14 +391,6 @@ function WorkshopCard({ info }) {
             <img src={info.imgLink} />
             <div>
                 <p>
-                    <span
-                        className={styles.levelLabel}
-                        style={{
-                            backgroundColor: info.level == "Beginner" ? "#9FE399" : "#FF76F1",
-                        }}
-                    >
-                        {info.level}
-                    </span>
                     <h2 className={styles.title}>{info.title}</h2>
                 </p>
                 {/* {bigScreen ? <div /> : <p>{info.desc}</p>} */}
