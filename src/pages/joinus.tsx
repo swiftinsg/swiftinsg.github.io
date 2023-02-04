@@ -152,7 +152,7 @@ function StudentsPage() {
 								<b>Applications Open:</b> 1 Feburary
 							</li>
 							<li>
-								<b>Programme Briefing:</b> 11 Feburary
+								<b>Programme Briefing:</b> 4 Feburary
 							</li>
 							<li>
 								<b>Applications Close:</b> 26 February
