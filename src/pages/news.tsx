@@ -102,7 +102,7 @@ function StudentsPage() {
             <Section className={styles.sectionThree}>
                 <SectionTitle title="Achievements" />
                 <h1>WWDC Swift Student Challenge</h1>
-                <Text>Supporting students from around the world who love to code, Apple's WWDC Swift Student Challenge provides an opportunity for students to showcase their passion for coding by creating an incredible Swift playground on the topic of their choice. Meet the Swift Student Challenge winners from the Swift Accelerator Program and see their story.</Text>
+                <Text>Supporting students from around the world who love to code, Apple's WWDC Swift Student Challenge provides an opportunity for students to showcase their passion for coding by creating an incredible Swift playground on the topic of their choice. Meet the Swift Student Challenge winners from the Swift Accelerator Programme and see their story.</Text>
                 <br />
                 <SectionTitle title="WWDC 2022 SSC Winners" size="3vh" weight="bold" />
                 <>

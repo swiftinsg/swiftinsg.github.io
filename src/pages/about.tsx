@@ -43,7 +43,7 @@ function AboutPage() {
                 </Text>
                 <SectionTitle title="Programme Outline" />
                 <Text>
-                    <p>Get more details to the program outline <Link to="/joinus">here</Link>.</p>
+                    <p>Get more details to the programme outline <Link to="/joinus">here</Link>.</p>
                 </Text>
             </Section>
             

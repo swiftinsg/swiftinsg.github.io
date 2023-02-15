@@ -86,7 +86,7 @@ function StudentsPage() {
           {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3> */}
           <h3 style={{ color: "white" }}>
             <h3>
-              Want to learn more about Swift Accelerator Program and how you can
+              Want to learn more about Swift Accelerator Programme and how you can
               be a part of the Class of 2023?
             </h3>
             <h3>

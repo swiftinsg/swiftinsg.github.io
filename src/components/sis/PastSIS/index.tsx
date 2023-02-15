@@ -47,7 +47,7 @@ function PastSIS() {
       <div className={styles.appBanner}>
         <h1>Changing the world. One app at a time.</h1>
         <p>
-          From apps for work to apps for play, see how our Swift Accelerator Program 2022
+          From apps for work to apps for play, see how our Swift Accelerator Programme 2022
           <br />
           students bring their ideas to life.
         </p>
