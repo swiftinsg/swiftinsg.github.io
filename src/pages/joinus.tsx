@@ -85,58 +85,55 @@ function StudentsPage() {
           {/* <h3 id={styles.bodyText}>Congratulations to successful applicants of the Class of 2022</h3> */}
           {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3> */}
           <h3 style={{ color: "white" }}>
-            <h3>
-              Want to learn more about Swift Accelerator Programme and how you can
-              be a part of the Class of 2023?
-            </h3>
-            <h3>
-              <Link
-                style={{
-                  padding: "10px 15px",
-                  marginRight: "10px",
-                  backgroundColor: "orange",
-                  textDecoration: "none",
-                  borderRadius: 10,
-                  color: "black",
-                  display: "inline"
-                }}
-                to="https://tk.sg/swift2023briefing"
-                target="_blank">
-                Briefing by instructors
-              </Link>
-
-              <Link
-                style={{
-                  padding: "10px 15px",
-                  backgroundColor: "orange",
-                  textDecoration: "none",
-                  borderRadius: 10,
-                  color: "black",
-                  display: "inline"
-                }}
-                to="https://youtu.be/aghbTsXk2qk"
-                target="_blank">
-                Sharing by Class of 2022
-              </Link>
-
-              <br />
-              <br />
-              <Link
-                style={{
-                  padding: "10px 15px",
-                  backgroundColor: "orange",
-                  textDecoration: "none",
-                  borderRadius: 10,
-                  color: "black",
-                  display: "inline-block"
-                }}
-                to="https://tk.sg/swift2023application"
-                target="_blank">
-                Sign up here by 26 Feb
-              </Link>
-            </h3>
-            {/* <h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3> */}
+            Learn more about Swift Accelerator Programme, and how you can
+            be a part of the Class of 2023.
           </h3>
+          <h3>
+            <Link
+              style={{
+                padding: "10px 15px",
+                marginBottom: "15px",
+                backgroundColor: "orange",
+                textDecoration: "none",
+                borderRadius: 10,
+                color: "black",
+                display: "inline-block"
+              }}
+              to="https://tk.sg/swift2023briefing"
+              target="_blank">
+              Briefing by instructors
+            </Link>
+
+            <Link
+              style={{
+                padding: "10px 15px",
+                marginBottom: "15px",
+                backgroundColor: "orange",
+                textDecoration: "none",
+                borderRadius: 10,
+                color: "black",
+                display: "inline-block"
+              }}
+              to="https://youtu.be/aghbTsXk2qk"
+              target="_blank">
+              Sharing by Class of 2022
+            </Link>
+
+            <Link
+              style={{
+                padding: "10px 15px",
+                backgroundColor: "yellow",
+                textDecoration: "none",
+                borderRadius: 10,
+                color: "black",
+                display: "inline-block"
+              }}
+              to="https://tk.sg/swift2023application"
+              target="_blank">
+              Apply at this form by 26 Feb
+            </Link>
+          </h3>
+          {/* <h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3> */}
           <ReadMore />
         </BannerSection>
         <Section className={styles.sectionTwo}>
