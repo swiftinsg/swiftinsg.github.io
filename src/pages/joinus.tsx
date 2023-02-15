@@ -93,6 +93,7 @@ function StudentsPage() {
               style={{
                 padding: "10px 15px",
                 marginBottom: "15px",
+				marginRight: "15px",
                 backgroundColor: "orange",
                 textDecoration: "none",
                 borderRadius: 10,
