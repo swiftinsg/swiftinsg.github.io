@@ -22,8 +22,20 @@ If you feel confident enough in React, Typescript and SCSS, feel free to follow 
     Do **NOT** push directly to **`main`** or **`dev`**.
 
     ## Install NodeJS and NPM
+
+    Please note to install NodeJS **version 16** for our current set of dependencies. NodeJS 18 (the latest LTS version) is unsupported. 
+
+    If you need to check which version you have:
+
+    ```shell
+    $ node -v
+    ```
+
+    If you have Node 16 and it's default, you're good to go for now (until/unless you accidentally update it, and things break). 
+
+    If you don't have Node, you can install the right version by going to [this folder](https://nodejs.org/dist/v16.9.0/) and getting the right installer (`.pkg` for Mac, `.msi` for Windows). 
     
-    Download for your platform here: https://nodejs.org/en/download/
+    If you have Node 18, consider installing Node Version Manager, `nvm`. There's already a `.nvmrc` file in the folder, so each time you `cd` into the folder, type `nvm use` and it'll switch your Node version.     
 
     ## Setup and Running
 
