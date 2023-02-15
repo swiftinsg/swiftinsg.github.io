@@ -77,114 +77,180 @@ function StudentsPage() {
 	});
 	
 	return (
-		<>
-			<Header startWhite={true} />
-			<Page className={styles.page}>
-				<BannerSection bg={joinusBanner}>
-					<h1>Join Us</h1>
-					{/* <h3 id={styles.bodyText}>Congratulations to successful applicants of the Class of 2022</h3> */}
-					{/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3> */}
-					<h3 style={{ color: "white" }}>
-						<h3>Want to learn more about Swift Accelerator Program and how you can be a part of the Class of 2023?</h3>
-						<h3>
-							<Link
-								style={{
-									padding: "10px 15px",
-									backgroundColor: "orange",
-									textDecoration: "none",
-									borderRadius: 10,
-									color: "black",
-									display: "inline-block"
-								}}
-								to="https://tk.sg/swift2023briefing"
-								target="_blank"
-							>
-								Sign up for the briefing
-							</Link>
-							<br/>
-							<br/>
-							<Link
-								style={{
-									padding: "10px 15px",
-									backgroundColor: "orange",
-									textDecoration: "none",
-									borderRadius: 10,
-									color: "black",
-									display: "inline-block"
-								}}
-								to="https://tk.sg/swift2023application"
-								target="_blank"
-							>
-								Sign up for the programme
-							</Link>
-						</h3>
-						{/* <h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3> */}
-					</h3>
-					<ReadMore />
-				</BannerSection>
-				<Section className={styles.sectionTwo}>
-                <SectionTitle title="Application Details" />
-                <Text>
-                    <p>To apply for the Swift Accelerator Programme, applicants must demonstrate strong aptitude and interest in programming and app design. The application process is as follows:  </p>
-                    <ol>
-                        <li>Take note of the important dates below for deadlines and briefings. </li>
-                        <li>Confirm that you can attend the <b>vast majority</b> of the scheduled sessions. <Link to="https://cld.tk.sg/nOu1rkJ7">See the schedule here.</Link></li>
-                        {/* <li>Try out Unit 1 of our <Link to="https://tk.sg/swiftui-videos-unit1">SwiftUI video series</Link>. You may use <Link to="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</Link> on iPad or Mac for this. If you have any issues, email us at <Link to="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link>.</li>
+    <>
+      <Header startWhite={true} />
+      <Page className={styles.page}>
+        <BannerSection bg={joinusBanner}>
+          <h1>Join Us</h1>
+          {/* <h3 id={styles.bodyText}>Congratulations to successful applicants of the Class of 2022</h3> */}
+          {/* <h3 id={styles.bodyText}>Email <Link className={styles.linkText} href="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link> to find out more, or follow us on social media to keep up with the Class of 2022.</h3> */}
+          <h3 style={{ color: "white" }}>
+            <h3>
+              Want to learn more about Swift Accelerator Program and how you can
+              be a part of the Class of 2023?
+            </h3>
+            <h3>
+              <Link
+                style={{
+                  padding: "10px 15px",
+				  marginRight: "10px",
+                  backgroundColor: "orange",
+                  textDecoration: "none",
+                  borderRadius: 10,
+                  color: "black",
+                  display: "inline"
+                }}
+                to="https://tk.sg/swift2023briefing"
+                target="_blank">
+                Briefing by instructors
+              </Link>
+
+              <Link
+                style={{
+                  padding: "10px 15px",
+                  backgroundColor: "orange",
+                  textDecoration: "none",
+                  borderRadius: 10,
+                  color: "black",
+                  display: "inline"
+                }}
+                to="https://youtu.be/aghbTsXk2qk"
+                target="_blank">
+                Sharing by Class of 2022
+              </Link>
+
+              <br />
+              <br />
+              <Link
+                style={{
+                  padding: "10px 15px",
+                  backgroundColor: "orange",
+                  textDecoration: "none",
+                  borderRadius: 10,
+                  color: "black",
+                  display: "inline-block"
+                }}
+                to="https://tk.sg/swift2023application"
+                target="_blank">
+                Sign up here by 26 Feb
+              </Link>
+            </h3>
+            {/* <h3>Date: 4 February 2023 <br/> Time: 10am to 11am <br/> Location: Apple Innovis</h3> */}
+          </h3>
+          <ReadMore />
+        </BannerSection>
+        <Section className={styles.sectionTwo}>
+          <SectionTitle title="Application Details" />
+          <Text>
+            <p>
+              To apply for the Swift Accelerator Programme, applicants must
+              demonstrate strong aptitude and interest in programming and app
+              design. The application process is as follows:{" "}
+            </p>
+            <ol>
+              <li>
+                Take note of the important dates below for deadlines and
+                briefings.{" "}
+              </li>
+              <li>
+                Confirm that you can attend the <b>majority</b> of the scheduled
+                sessions.{" "}
+                <Link to="https://tk.sg/swift2023publicschedule">
+                  See the schedule here.
+                </Link>
+              </li>
+              {/* <li>Try out Unit 1 of our <Link to="https://tk.sg/swiftui-videos-unit1">SwiftUI video series</Link>. You may use <Link to="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</Link> on iPad or Mac for this. If you have any issues, email us at <Link to="mailto:hello@swiftinsg.org">hello@swiftinsg.org</Link>.</li>
                         <ul>
                             <li>If you are using a managed iPad that is unable to build App projects or using Swift Playgrounds 4 for Mac, you can create a normal Playground and paste in the code from <Link to="https://tk.sg/swiftpgtemplate">https://tk.sg/swiftpgtemplate</Link>.</li>
                         </ul>
                         <li>Prepare a <b>minute-long</b> video introducing yourself and your end-product based on [3]. Reflect on your experience creating it (how you got it to work, any challenges, anything new you've tried, etc.). Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say.</li> */}
-                        <li>Prepare a <b>minute-long</b> video introducing yourself and why you want to join the Swift Accelerator Programme. You may feel free to bring up any relevant past experience if you wish. Our focus will be on the content of the video and not the video production quality. However, please ensure the video and audio are clear enough that we are able to understand what you say. Do note that the maximum time allowed is <b>3 minutes</b>, thereafter we will stop watching your video.</li>
-                        <li>Prepare any supporting documents, links or any information you think might be relevant when we consider your application</li>
-                        <li>Complete an individual entrance test and survey. The test includes coding, design, essay questions (involving the aforementioned video), and should be completed in about an hour.</li>
-                    </ol>
-                    <p><b>Important note:</b> The programme is <b>fully subsidised</b> for successful applicants. Please read through the application form carefully, and ensure, before applying:</p>
-                    <ol>
-                        <li>You can attend a vast majority of the scheduled sessions. <Link to="https://cld.tk.sg/nOu1rkJ7">See the schedule here.</Link></li>
-                        <li>You're interested enough in coding, design, and app development to spend a huge chunk of your free time learning and practising — the entire programme lasts 180 hours, and you'll spend more time than that coding on your own.</li>
-                        <li>You're up for a challenge!</li>
-                    </ol>
-                </Text>
-				<SectionTitle title="Key Dates" />
-					<Text>
-						<ul>
-							<li>
-								<b>Applications Open:</b> 1 Feburary
-							</li>
-							<li>
-								<b>Programme Briefing:</b> 4 Feburary
-							</li>
-							<li>
-								<b>Applications Close:</b> 26 February
-							</li>
-							<li>
-								<b>Results Release:</b> 6 March (by the end of the day)
-							</li>
-							<li>
-								<b>First Lesson:</b> 11 March
-							</li>	
-						</ul>
-					</Text>
-					<SectionTitle title="Frequently Asked Questions" />
-					<Text>
-						<ul>
-							<li>
-								<b>Does the programme cost anything to join?</b> No, the classes and optional certification are sponsored by IMDA.
-							</li>
-							<li>
-								<b>Must students be from the Infocomm/Media/AV Club to join?</b> We will give priority to students from these clubs, as they are
-								IMDA-supported clubs and this is an IMDA-sponsored programme.{" "}
-							</li>
-							<li>
-								<b>Can Sec 4s/JC students join?</b> Only if your schedule allows — please take a careful look at the schedule on this page,
-								which is designed for Sec 1-3. IP Year 4s have joined the programme and found our schedule doesn't clash much; we suspect
-								O-level and JC students might have a tougher time in this regard.{" "}
-							</li>
-							<li>
-								<b>Do we need a Mac for the programme?</b> Yes. If you don't have one, we should be able to arrange a loan for the programme.
-								But in case we can't get enough loans, we may need to prioritise applicants who have their own.{" "}
-							</li>
-							{/* <li>
+              <li>
+                Prepare a <b>minute-long</b> video introducing yourself and why
+                you want to join the Swift Accelerator Programme. You may feel
+                free to bring up any relevant past experience if you wish. Our
+                focus will be on the content of the video and not the video
+                production quality. However, please ensure the video and audio
+                are clear enough that we are able to understand what you say. Do
+                note that the maximum time allowed is <b>3 minutes</b>,
+                thereafter we will stop watching your video.
+              </li>
+              <li>
+                Prepare any supporting documents, links or any information you
+                think might be relevant when we consider your application
+              </li>
+              <li>
+                Complete an individual entrance test and survey. The test
+                includes coding, design, essay questions (involving the
+                aforementioned video), and should be completed in about an hour.
+              </li>
+            </ol>
+            <p>
+              <b>Important note:</b> The programme is <b>fully subsidised</b>{" "}
+              for successful applicants. Please read through the application
+              form carefully, and ensure, before applying:
+            </p>
+            <ol>
+              <li>
+                You can attend a majority of the scheduled sessions.{" "}
+                <Link to="https://tk.sg/swift2023publicschedule">
+                  See the schedule here.
+                </Link>
+              </li>
+              <li>
+                You're interested enough in coding, design, and app development
+                to spend a huge chunk of your free time learning and practising
+                — the entire programme lasts 180 hours, and you'll spend more
+                time than that coding on your own.
+              </li>
+              <li>You're up for a challenge!</li>
+            </ol>
+          </Text>
+          <SectionTitle title="Key Dates" />
+          <Text>
+            <ul>
+              <li>
+                <b>Applications Open:</b> 1 Feburary
+              </li>
+              <li>
+                <b>Programme Briefing:</b> 4 Feburary
+              </li>
+              <li>
+                <b>Applications Close:</b> 26 February
+              </li>
+              <li>
+                <b>Results Release:</b> 6 March (by the end of the day)
+              </li>
+              <li>
+                <b>First Lesson:</b> 11 March
+              </li>
+            </ul>
+          </Text>
+          <SectionTitle title="Frequently Asked Questions" />
+          <Text>
+            <ul>
+              <li>
+                <b>Does the programme cost anything to join?</b> No, the classes
+                and optional certification are sponsored by IMDA.
+              </li>
+              <li>
+                <b>Must students be from the Infocomm/Media/AV Club to join?</b>{" "}
+                We will give priority to students from these clubs, as they are
+                IMDA-supported clubs and this is an IMDA-sponsored programme.{" "}
+              </li>
+              <li>
+                <b>Can Sec 4s/JC students join?</b> Only if your schedule allows
+                — please take a careful look at the schedule on this page, which
+                is designed for Sec 1-3. IP Year 4s have joined the programme
+                and found our schedule doesn't clash much; we suspect O-level
+                and JC students might have a tougher time in this regard.{" "}
+              </li>
+              <li>
+                <b>Do we need a Mac for the programme?</b> Yes. If you don't
+                have one, we should be able to arrange a loan for the programme.
+                But in case we can't get enough loans, we may need to prioritise
+                applicants who have their own.{" "}
+              </li>
+              {/* <li>
 								<b>Why did you push back the application deadline?</b> Teachers we spoke to at the graduation this week agreed this holiday week
 								is quite busy for students (and we're guilty of adding to that, running 3 other ongoing competitions & challenges), so this
 								extension would allow students to spend a bit more time on their submissions. Past participants from the Swift Explorers programme, 
@@ -206,10 +272,10 @@ function StudentsPage() {
 								own app as a final product. Find out more at{" "}
 								<Link to="https://www.crescent.edu.sg/cradle/swift-explorers-singapore-ses/about-ses">this link.</Link> Past participants from the Swift Explorers programme, especially finalists in the showcase phase, would be well equipped to apply for the Swift Accelerator Programme!
 					</li>*/}
-						</ul>
-					</Text>
-				</Section>
-				{/* <Section className={styles.sectionTwo}>
+            </ul>
+          </Text>
+        </Section>
+        {/* <Section className={styles.sectionTwo}>
 					<SectionTitle title="Schedule for 2022" />
 					<Text>
 						<p>
@@ -226,18 +292,18 @@ function StudentsPage() {
 						</p>
 					</div>
 				</Section> */}
-				<Section className={styles.timeline}>
-					<SectionTitle title="Programme Outline" />
-					<div>
-						{steps.map((s) => (
-							<Outline {...s} />
-						))}
-					</div>
-				</Section>
-				<Footer />
-			</Page>
-		</>
-	);
+        <Section className={styles.timeline}>
+          <SectionTitle title="Programme Outline" />
+          <div>
+            {steps.map((s) => (
+              <Outline {...s} />
+            ))}
+          </div>
+        </Section>
+        <Footer />
+      </Page>
+    </>
+  );
 }
 
 function Outline({ title, desc, pic }: { title: string; desc: string; pic?: string }) {
